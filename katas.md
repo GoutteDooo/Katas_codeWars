@@ -1821,3 +1821,11 @@ const reverseSeq = (n) => {
 };
 ```
 
+# Reversed Strings [8 kyu] #138
+
+```js
+function solution(str){
+    return str.split("").reverse().join("");
+}
+```
+
