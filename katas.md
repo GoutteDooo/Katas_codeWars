@@ -2456,3 +2456,21 @@ function toBinary(n){
 }
 ```
 
+# Flatten and sort an array [7 kyu] #183
+
+```js
+function flattenAndSort(array) {
+  // Good luck, brave code warrior!
+const arraySorted = array.map((subArray) => subArray.sort((a, b) => a - b));
+  console.log(arraySorted);
+
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].length; j++) {
+      newArray.push(arraySorted[i][j]);
+    }
+  }
+  return newArray.sort((a, b) => a - b);
+}
+```
+
