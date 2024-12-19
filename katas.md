@@ -1356,3 +1356,18 @@ if (bingo.length < 5) bingo.push("B" + randomNumber);
 }
 ```
 
+# Complete The Pattern #1 [7 kyu] #101
+
+```js
+function pattern(n) {
+  var output = "";
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < i + 1; j++) {
+      output += i + 1;
+    }
+    if (i + 1 !== n) output += "\n";
+  }
+  return output;
+}
+```
+
