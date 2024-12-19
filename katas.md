@@ -235,3 +235,11 @@ return String.fromCharCode(c);
 }
 ```
 
+# Reverse List Order [8 kyu] #19
+
+```js
+function reverseList(list) {
+  return list.reverse()
+}
+```
+
