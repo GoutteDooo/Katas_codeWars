@@ -516,3 +516,12 @@ return (flower1 + flower2) % 2 ? true : false
 }
 ```
 
+# Convert a Boolean to a String [8 kyu] #43
+
+```js
+function booleanToString(b){
+  //your code here
+return String(b)
+}
+```
+
