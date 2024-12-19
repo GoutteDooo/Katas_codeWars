@@ -1921,3 +1921,20 @@ function arrayDiff(a, b) {
 }
 ```
 
+# Beginner Series #3 Sum of Numbers [7 kyu] #148
+
+```js
+function getSum(a, b)
+{
+  if ( a == b ) return a;
+  let start = a > b ? b : a;
+  const end = a > b ? a : b;
+  let sum = 0;
+  do {
+    sum += start;
+    start++;
+  } while (start < end + 1)
+  return sum;
+}
+```
+
