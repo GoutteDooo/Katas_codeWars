@@ -1569,3 +1569,11 @@ let counter = 0;
 }
 ```
 
+# Remove String Spaces [8 kyu] #120
+
+```js
+function noSpace(x) {
+  return x.replace(/ /g, "");
+}
+```
+
