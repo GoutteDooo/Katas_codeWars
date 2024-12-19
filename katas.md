@@ -1776,3 +1776,11 @@ function squareDigits(num) {
 }
 ```
 
+# Grasshopper - Personalized Message [8 kyu] #134
+
+```js
+function greet (name, owner) {
+  return name == owner ? "Hello boss" : "Hello guest";
+}
+```
+
