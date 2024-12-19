@@ -646,3 +646,11 @@ return string[string.length - 1] === "!" ? string.split("").filter((l,i) => i !=
 }
 ```
 
+# Training JS #7: if..else and ternary operator [8 kyu] #52
+
+```js
+function saleHotdogs(n){
+  return n < 5 ? n * 100 : n < 10 ? n * 95 : n * 90;
+}
+```
+
