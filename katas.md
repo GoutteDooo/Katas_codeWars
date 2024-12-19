@@ -507,3 +507,12 @@ return health - damage < 0 ? 0 : health - damage;
 }
 ```
 
+# Opposites Attract [8 kyu] #42
+
+```js
+function lovefunc(flower1, flower2){
+  // moment of truth
+return (flower1 + flower2) % 2 ? true : false
+}
+```
+
