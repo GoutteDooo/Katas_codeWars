@@ -1685,3 +1685,13 @@ function solution(string) {
 }
 ```
 
+# Removing Elements [8 kyu] #129
+
+```js
+
+function removeEveryOther(arr) {
+  //your code here
+return arr.filter((n, i) => i % 2 == 0);
+}
+```
+
