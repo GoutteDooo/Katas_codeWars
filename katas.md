@@ -2284,3 +2284,11 @@ const greet = () => {
 }
 ```
 
+# Beginner - Lost Without a Map [8 kyu] #173
+
+```js
+function maps(x){
+  return x.map((num) => num * 2);
+}
+```
+
