@@ -1383,3 +1383,16 @@ var number = function (busStops) {
 };
 ```
 
+# Printer Errors [7 kyu] #103
+
+```js
+function printerError(s) {
+  const length = s.length;
+  let countError = s
+    .split("")
+    .map((char) => char > "m")
+    .filter((bool) => bool).length;
+  return `${countError}/${length}`;
+}
+```
+
