@@ -1497,3 +1497,12 @@ function getGrade (s1, s2, s3) {
 }
 ```
 
+# List Filtering [7 kyu] #114
+
+```js
+function filter_list(l) {
+  // Return a new array with the strings filtered out
+return l.filter((n) => typeof n == "number");
+}
+```
+
