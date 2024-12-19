@@ -480,3 +480,12 @@ let calcul = 0;
 }
 ```
 
+# Grasshopper - Basic Function Fixer [8 kyu] #39
+
+```js
+function addFive(num) {
+  var total = num + 5
+return total
+}
+```
+
