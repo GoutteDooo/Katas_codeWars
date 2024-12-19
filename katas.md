@@ -1646,3 +1646,26 @@ return iterable
 };
 ```
 
+# Detect Pangram [6 kyu] #126
+
+```js
+function isPangram(string) {
+  console.log(string.toLowerCase().replace(/ /g, "").split("").sort());
+  const alphabet = Array.from({ length: 26 }, (_, i) =>
+String.fromCharCode(97 + i)
+  );
+
+  return alphabet.every((letter) =>
+string
+      .toLowerCase()
+      .replace(/ /g, "")
+      .split("")
+      .reduce((a, l, i) => {
+        a[l] = (a[l] || 0) + 1;
+        return a;
+      }, {})
+      .hasOwnProperty(letter)
+  );
+}
+```
+
