@@ -1529,3 +1529,13 @@ num = num.toString().split("");
 }
 ```
 
+# Volume of a Cuboid [8 kyu] #117
+
+```js
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
+```
+
