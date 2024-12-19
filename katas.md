@@ -154,3 +154,34 @@ return triplet.findIndex((n) => n === gimme);
 }
 ```
 
+# Title Case [6 kyu] #13
+
+```js
+function titleCase(title, minorWords = null) {
+  if (minorWords) {
+    minorWords = minorWords.split(" ");
+    console.log(minorWords);
+  }
+  title = title.split(" ");
+  console.log(title);
+  for (let i = 0; i < title.length; i++) {
+    if (minorWords) {
+      // Si minorWords
+for (let j = 0; j < minorWords.length; j++) {
+        if (minorWords[j].toLowerCase() === title[i].toLowerCase() && i) {
+          title[i] = title[i].toLowerCase();
+          break;
+        } else
+title[i] =
+title[i].charAt(0).toUpperCase() + title[i].slice(1).toLowerCase();
+      }
+    } else {
+      //Si pas de minorWords, on fait la même
+title[i] =
+title[i].charAt(0).toUpperCase() + title[i].slice(1).toLowerCase();
+    }
+  }
+  return title.join(" ");
+}
+```
+
