@@ -269,3 +269,15 @@ const array = n.toString().split("");
 }
 ```
 
+# Is this a triangle? [7 kyu] #22
+
+```js
+function isTriangle(a, b, c) {
+  if (a + b + c < 0) return false;
+  return [a, b, c].sort((a, b) => b - a)[0] >=
+    [a, b, c].sort((a, b) => b - a)[1] + [a, b, c].sort((a, b) => b - a)[2]
+    ? false
+    : true;
+}
+```
+
