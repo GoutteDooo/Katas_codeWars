@@ -1440,3 +1440,12 @@ function findEvenIndex(arr) {
 }
 ```
 
+# Beginner Series #4 Cockroach [8 kyu] #108
+
+```js
+function cockroachSpeed(s) {
+  //Good Luck!
+return Math.floor((s / 3600) * 100000);
+}
+```
+
