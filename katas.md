@@ -1209,3 +1209,24 @@ return string.split("").reduce((a, l) => {
 }
 ```
 
+# Throwing Darts [6 kyu] #94
+
+```js
+function scoreThrows(radii) {
+  let count = 0;
+  let strike = 0;
+  if (!radii.length) return 0;
+  for (let i = 0; i < radii.length; i++) {
+    if (radii[i] < 5) {
+      count += 10;
+      strike++;
+    } else if (radii[i] <= 10) {
+      count += 5;
+    }
+  }
+  count += strike == radii.length ? 100 : 0;
+
+  return count;
+}
+```
+
