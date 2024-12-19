@@ -2002,3 +2002,11 @@ function findNeedle(haystack) {
 }
 ```
 
+# Invert values [8 kyu] #154
+
+```js
+function invert(array) {
+   return array.map((x) => -x)
+}
+```
+
