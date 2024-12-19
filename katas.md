@@ -963,3 +963,11 @@ function sumMix(x) {
 }
 ```
 
+# Count by X [8 kyu] #76
+
+```js
+function countBy(x, n) {
+  return Array.from({ length: n }, (_, i) => (i + 1) * x);
+}
+```
+
