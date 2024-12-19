@@ -214,3 +214,15 @@ function grow(x){
 }
 ```
 
+# Calculate average [8 kyu] #17
+
+```js
+function findAverage(array) {
+  // your code here
+if (!array) return [];
+  if (!array.length) return 0;
+  const length = array.length;
+  return array.reduce((a, n) => (a = a + n), 0) / length;
+}
+```
+
