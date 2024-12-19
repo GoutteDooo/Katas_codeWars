@@ -341,3 +341,12 @@ for (let j = 0; j < array1.length; j++) {
 }
 ```
 
+# You Can't Code Under Pressure #1 [8 kyu] #28
+
+```js
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+return i*2
+}
+```
+
