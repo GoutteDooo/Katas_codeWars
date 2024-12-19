@@ -299,3 +299,11 @@ function square(number) {
 }
 ```
 
+# Grasshopper - Debug sayHello [8 kyu] #25
+
+```js
+function sayHello(name) {
+  return 'Hello, ' + name;
+}
+```
+
