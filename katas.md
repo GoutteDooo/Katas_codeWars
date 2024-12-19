@@ -586,3 +586,15 @@ function diamond(n) {
 }
 ```
 
+# Find the capitals [7 kyu] #48
+
+```js
+var capitals = function (word) {
+  // Write your code here
+return word
+    .split("")
+    .map((l, i) => (l === l.toUpperCase() ? i : l))
+    .filter((char) => char >= 0);
+};
+```
+
