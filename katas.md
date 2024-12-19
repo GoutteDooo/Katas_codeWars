@@ -1196,3 +1196,16 @@ return +str;
 }
 ```
 
+# Count characters in your string [6 kyu] #93
+
+```js
+
+function count(string) {
+  // TODO
+return string.split("").reduce((a, l) => {
+    a[l] = (a[l] | 0) + 1;
+    return a;
+  }, {});
+}
+```
+
