@@ -783,3 +783,11 @@ if (!words.length) return "";
 }
 ```
 
+# Sum The Strings [8 kyu] #63
+
+```js
+function sumStr(a,b) {
+  return String(+a + +b);
+}
+```
+
