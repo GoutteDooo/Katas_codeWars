@@ -1230,3 +1230,18 @@ function scoreThrows(radii) {
 }
 ```
 
+# Calculate BMI [8 kyu] #95
+
+```js
+function bmi(w, h) {
+  const bmi = w / (h * h);
+  return bmi <= 18.5
+? "Underweight"
+    : bmi <= 25
+? "Normal"
+    : bmi <= 30
+? "Overweight"
+    : "Obese";
+}
+```
+
