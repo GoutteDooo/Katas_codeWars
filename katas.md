@@ -1980,3 +1980,15 @@ function openOrSenior(data){
 }
 ```
 
+# If you can't sleep, just count sheep!! [8 kyu] #152
+
+```js
+var countSheep = function (num){
+  let str = ""
+for (let i = 1 ; i < num + 1 ; i++)  {
+    str += `${i} sheep...`;
+  }
+  return str;
+}
+```
+
