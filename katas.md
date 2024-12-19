@@ -1515,3 +1515,17 @@ function enough(cap, on, wait) {
 
 ```
 
+# Write Number in Expanded Form [6 kyu] #116
+
+```js
+function expandedForm(num) {
+  // Your code here
+num = num.toString().split("");
+  let result = [];
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] !== "0") result.push(num[i] + "0".repeat(num.length - i - 1));
+  }
+  return result.join(" + ");
+}
+```
+
