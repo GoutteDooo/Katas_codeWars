@@ -1728,3 +1728,19 @@ let count = 0;
 }
 ```
 
+# The highest profit wins! [7 kyu] #131
+
+```js
+function minMax(arr) {
+  let min = arr[0];
+  let max = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    min = min < arr[i] ? arr[i] : min;
+    max = max > arr[i] ? arr[i] : max;
+  }
+  const newArr = [];
+  newArr.splice(0, 0, max, min);
+  return newArr;
+}
+```
+
