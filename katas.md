@@ -745,3 +745,16 @@ function getRealFloor(n) {
 }
 ```
 
+# Sort and Star [8 kyu] #61
+
+```js
+function twoSort(s) {
+  return s.sort().map((word) =>
+word
+      .split("")
+      .map((l, i) => (i < word.length - 1 ? (l = l + "***") : l))
+      .join("")
+  )[0];
+}
+```
+
