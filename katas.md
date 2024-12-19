@@ -2228,3 +2228,11 @@ function smash (words) {
 };
 ```
 
+# Disemvowel Trolls [7 kyu] #168
+
+```js
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, "");
+}
+```
+
