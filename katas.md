@@ -927,3 +927,31 @@ return distanceToPump <= mpg * fuelLeft ? true : false;
 
 ```
 
+# Product of consecutive Fib numbers [5 kyu] #74
+
+```js
+function productFib(prod) {
+  let tempF = 1, //f0
+lastF = 1, //f1
+currentF = lastF + tempF; //f2
+let saveMin = lastF * tempF;
+  let saveMax = currentF * lastF;
+  while (saveMax < prod) {
+    if (currentF * lastF < prod) {
+      saveMin = currentF * lastF;
+    } else {
+      saveMax = currentF * lastF;
+      break;
+    }
+    tempF = currentF; //tempF prend f(n)
+console.log(tempF);
+
+    currentF = currentF + lastF; //f(n+1) = f(n) + f(n-1)
+lastF = tempF; //f(n-1) = f(n)
+// console.log(saveMin);
+  }
+
+  return saveMax === prod ? [tempF, currentF, true] : [tempF, currentF, false];
+}
+```
+
