@@ -1625,3 +1625,24 @@ const result = [];
 }
 ```
 
+# Unique In Order [6 kyu] #125
+
+```js
+var uniqueInOrder = function (iterable) {
+  //your code here - remember iterable can be a string or an array
+if (!Array.isArray(iterable)) iterable = iterable.split("");
+  if (iterable.length == 0) return [];
+  if (typeof iterable[0] === "number")
+    return iterable
+      .join("")
+      .toString()
+      .match(/(\w)(?!\1)/g)
+      .map((n) => (n = Number(n)));
+  else
+return iterable
+      .join("")
+      .toString()
+      .match(/(\w)(?!\1)/g);
+};
+```
+
