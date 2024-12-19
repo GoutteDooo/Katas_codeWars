@@ -1762,3 +1762,17 @@ function bouncingBall(h, bounce, window) {
 }
 ```
 
+# Square Every Digit [7 kyu] #133
+
+```js
+function squareDigits(num) {
+  return Number(
+    num
+      .toString()
+      .split("")
+      .map((x) => x * x)
+      .join("")
+  );
+}
+```
+
