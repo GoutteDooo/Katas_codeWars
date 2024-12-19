@@ -676,3 +676,17 @@ let sum = 0;
 };
 ```
 
+# Find Maximum and Minimum Values of a List [8 kyu] #55
+
+```js
+var min = function(list){
+    
+    return list.sort((a,b) => a - b)[0];
+}
+
+var max = function(list){
+    
+    return list.sort((a,b) => b - a)[0];
+}
+```
+
