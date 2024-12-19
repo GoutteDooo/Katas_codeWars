@@ -1898,3 +1898,16 @@ function removeChar(str) {
 }
 ```
 
+# Replace With Alphabet Position [6 kyu] #146
+
+```js
+function alphabetPosition(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-zA-Z]/g, "")
+    .split("")
+    .map((char) => char.charCodeAt(0) - 96)
+    .join(" ");
+}
+```
+
