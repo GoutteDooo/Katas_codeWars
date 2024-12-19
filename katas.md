@@ -907,3 +907,12 @@ return message
 }
 ```
 
+# Is he gonna survive? [8 kyu] #72
+
+```js
+function hero(bullets, dragons){
+  return bullets / 2 < dragons ? false : true;
+}
+
+```
+
