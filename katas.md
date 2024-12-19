@@ -2252,3 +2252,17 @@ return isPair
 }
 ```
 
+# Growth of a Population [7 kyu] #170
+
+```js
+function nbYear(p0 = 1000, percent = 0.02, aug = 50, p = 1200) {
+  let currentP = p0;
+  let counter = 0;
+  while (currentP < p) {
+    currentP += Math.floor(currentP * (percent / 100) + aug);
+    counter++;
+  }
+  return counter;
+}
+```
+
