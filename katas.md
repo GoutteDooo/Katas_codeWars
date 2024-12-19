@@ -1274,3 +1274,16 @@ function greet(language) {
 }
 ```
 
+# Transportation on vacation [8 kyu] #97
+
+```js
+function rentalCarCost(d) {
+  let off = 0;
+  if (d > 2) {
+    if (d > 6) off = -50;
+    else off = -20;
+  }
+  return d * 40 + off;
+}
+```
+
