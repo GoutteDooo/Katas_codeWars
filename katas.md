@@ -988,3 +988,23 @@ return month < 4
 };
 ```
 
+# Sort the odd [6 kyu] #78
+
+```js
+function sortArray(array) {
+  // Return a sorted array.
+const arrayOdd = array
+    .map((n) => (n % 2 ? n : ""))
+    .filter((ele) => ele === Number(ele))
+    .sort((a, b) => a - b);
+  let counter = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2) {
+      array[i] = arrayOdd[counter];
+      counter++;
+    }
+  }
+  return array;
+}
+```
+
