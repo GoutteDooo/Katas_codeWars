@@ -2048,3 +2048,16 @@ default:
 };
 ```
 
+# Delete occurrences of an element if it occurs more than n times [6 kyu] #156
+
+```js
+function deleteNth(arr, n) {
+  const counts = {};
+  return arr.filter((x) => {
+    console.log(counts);
+
+    return (counts[x] = (counts[x] || 0) + 1) <= n;
+  });
+}
+```
+
