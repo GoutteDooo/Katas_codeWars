@@ -835,3 +835,12 @@ function squareSum(numbers){
 }
 ```
 
+# Difference of Volumes of Cuboids [8 kyu] #68
+
+```js
+function findDifference(a, b) {
+  //loading...
+return Math.abs(a.reduce((a, n) => a * n, 1) - b.reduce((a, n) => a * n, 1));
+}
+```
+
