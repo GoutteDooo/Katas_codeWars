@@ -415,3 +415,12 @@ function positiveSum(arr) {
 }
 ```
 
+# Exclusive "or" (xor) Logical Operator [8 kyu] #34
+
+```js
+function xor(a, b) {
+  // TODO: Program Me
+return a ? b ? false : true : b ? true : false;
+}
+```
+
