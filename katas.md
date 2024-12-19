@@ -350,3 +350,12 @@ return i*2
 }
 ```
 
+# 5 without numbers !! [8 kyu] #29
+
+```js
+function unusualFive() {
+  let str = "abcde";
+  return str.length;
+}
+```
+
