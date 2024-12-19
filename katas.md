@@ -708,3 +708,11 @@ return name[0].toLowerCase() === "r" ? `${name} plays banjo` : `${name} does not
 }
 ```
 
+# Sort Numbers [7 kyu] #58
+
+```js
+function solution(nums){
+  return nums ? nums.sort((a,b) => a - b) : [];
+}
+```
+
