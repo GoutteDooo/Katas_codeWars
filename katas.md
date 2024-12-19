@@ -2354,3 +2354,37 @@ function boolToWord( bool ){
 }
 ```
 
+# Highest Scoring Word [6 kyu] #178
+
+```js
+function high(wordsString) {
+  const wordsJoined = wordsString.trim().split(/\s+/);
+  const order = "0abcdefghijklmnopqrstuvwxyz".split("");
+  let maxScore = 0;
+  let maxScoredString = "";
+  wordsJoined.forEach((word) => {
+    let tempScore = 0;
+
+    word.split("").forEach((letter) => {
+      for (let i = 0; i < order.length; i++) {
+        if (order[i] === letter) {
+          console.log(letter, " trouvée ! Score : ", i);
+
+          tempScore += i;
+          break;
+          //dés que la lettre est trouvée, on ajoute à tempScore et on arrête la boucle
+        }
+      }
+    });
+    //on compare tempScore avec maxScore et s'il dépasse, on l'enregistre avec word
+if (tempScore > maxScore) {
+      maxScore = tempScore;
+      maxScoredString = word;
+    }
+  });
+  console.log("maxScore : ", maxScore);
+  console.log("String gagnante : ", maxScoredString);
+  return maxScoredString;
+}
+```
+
