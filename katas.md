@@ -1950,3 +1950,20 @@ function SeriesSum(n) {
 }
 ```
 
+# Playing with digits [6 kyu] #150
+
+```js
+
+function digPow(n, p) {
+  const digits = n.toString().split("").map(Number);
+  let result = 0;
+  let pCounter = p;
+  for (let i = 0; i < digits.length; i++) {
+    result += Math.pow(digits[i], pCounter++);
+  }
+  if (Number.isInteger(result / n)) return result / n;
+
+  return -1;
+}
+```
+
