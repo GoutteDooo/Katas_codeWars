@@ -454,3 +454,29 @@ return [max, min];
 }
 ```
 
+# Basic Mathematical Operations [8 kyu] #38
+
+```js
+function basicOp(operation, value1, value2) {
+  //Code
+let calcul = 0;
+  switch (operation) {
+    case "+":
+      calcul = value1 + value2;
+      break;
+    case "-":
+      calcul = value1 - value2;
+      break;
+    case "*":
+      calcul = value1 * value2;
+      break;
+    case "/":
+      calcul = value1 / value2;
+      break;
+    default:
+      break;
+  }
+  return calcul
+}
+```
+
