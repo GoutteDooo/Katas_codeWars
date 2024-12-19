@@ -424,3 +424,11 @@ return a ? b ? false : true : b ? true : false;
 }
 ```
 
+# Small enough? - Beginner [7 kyu] #35
+
+```js
+function smallEnough(a, limit){
+  return a.filter((n) => n > limit).length ? false : true;
+}
+```
+
