@@ -2201,3 +2201,22 @@ function toCamelCase(str) {
 }
 ```
 
+# Complementary DNA [7 kyu] #166
+
+```js
+function dnaStrand(dna) {
+  return dna.replace(/A|T|G|C/g, (char) => {
+    switch (char) {
+      case "A":
+        return "T";
+      case "T":
+        return "A";
+      case "G":
+        return "C";
+      case "C":
+        return "G";
+    }
+  });
+}
+```
+
