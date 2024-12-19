@@ -550,3 +550,12 @@ return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 
 ```
 
+# Super Duper Easy [8 kyu] #46
+
+```js
+function problem(x){
+  //your code here
+return x === +x ? x * 50 + 6 : "Error"
+}
+```
+
