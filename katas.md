@@ -2304,3 +2304,28 @@ function friend(friends) {
 }
 ```
 
+# Sum of two lowest positive integers [7 kyu] #175
+
+```js
+function sumTwoSmallestNumbers(numbers) {
+  let mins = [];
+  const numbersTest = numbers;
+  //Rechercher les deux plus petits
+for (let i = 0; i < 2; i++) {
+    let savedIndex = 0;
+    let minToTest = numbersTest[0];
+    for (let j = 0; j < numbersTest.length; j++) {
+      if (numbersTest[j] < minToTest) {
+        minToTest = numbersTest[j];
+        savedIndex = j;
+      }
+    }
+    mins.push(minToTest);
+    numbersTest.splice(savedIndex, 1); // retirer le 1er min du tableau
+  }
+
+  //Retourner la somme des deux
+return mins[0] + mins[1];
+}
+```
+
