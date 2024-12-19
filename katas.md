@@ -432,3 +432,12 @@ function smallEnough(a, limit){
 }
 ```
 
+# Reversing Words in a String [8 kyu] #36
+
+```js
+function reverse(string) {
+  //your code here
+return string.split(" ").reverse().join(" ");
+}
+```
+
