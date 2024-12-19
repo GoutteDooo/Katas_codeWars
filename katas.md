@@ -2266,3 +2266,12 @@ function nbYear(p0 = 1000, percent = 0.02, aug = 50, p = 1200) {
 }
 ```
 
+# Sum Arrays [8 kyu] #171
+
+```js
+function sum(numbers) {
+  if (!numbers.length) return 0;
+  return numbers.reduce((acc, currrentValue) => acc + currrentValue, 0);
+}
+```
+
