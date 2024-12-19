@@ -2130,3 +2130,14 @@ function duplicateCount(text) {
 }
 ```
 
+# ROT13 [5 kyu] #161
+
+```js
+function rot13(str) {
+  return str.replace(/[a-zA-Z]/g, (char) => {
+    const base = char <= "Z" ? 65 : 97; //65 pour 'A', 97 pour 'a'
+return String.fromCharCode(((char.charCodeAt(0) - base + 13) % 26) + base);
+  });
+}
+```
+
