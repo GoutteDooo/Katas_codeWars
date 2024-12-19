@@ -2190,3 +2190,14 @@ var maxSequence = function (arr) {
 };
 ```
 
+# Convert string to camel case [6 kyu] #165
+
+```js
+
+function toCamelCase(str) {
+  return str.replace(/([-_][a-zA-Z])/g, (match) => {
+    return match[1].toUpperCase();
+  });
+}
+```
+
