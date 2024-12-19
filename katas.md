@@ -615,3 +615,25 @@ games[i][0] - games[i][2] > 0
 }
 ```
 
+# Count the smiley faces! [6 kyu] #50
+
+```js
+function countSmileys(arr) {
+  const validSmileys = [
+    ":-)",
+    ":-D",
+    ":~)",
+    ":~D",
+    ":)",
+    ":D",
+    ";-)",
+    ";-D",
+    ";~)",
+    ";~D",
+    ";)",
+    ";D",
+  ];
+  return arr.filter((smi) => validSmileys.includes(smi)).length;
+}
+```
+
