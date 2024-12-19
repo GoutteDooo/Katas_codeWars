@@ -1669,3 +1669,11 @@ string
 }
 ```
 
+# Even or Odd [8 kyu] #127
+
+```js
+function evenOrOdd(number) {
+  return number % 2 ? "Odd" : "Even";
+}
+```
+
