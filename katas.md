@@ -1008,3 +1008,12 @@ const arrayOdd = array
 }
 ```
 
+# Thinkful - Logic Drills: Traffic light [8 kyu] #79
+
+```js
+function updateLight(current) {
+  //your code here!
+return current == "green" ? "yellow" : current == "yellow" ? "red" : "green";
+}
+```
+
