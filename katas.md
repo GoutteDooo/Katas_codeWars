@@ -1313,3 +1313,46 @@ return string.replace(/[015]/g, (char) => {
 }
 ```
 
+# Bingo Card [6 kyu] #100
+
+```js
+function getCard() {
+  const bingo = [];
+  let m = 0;
+  let counter = 0;
+  while (bingo.length < 24) {
+    let randomNumber;
+    if (counter < 5) randomNumber = Math.floor(Math.random() * 15 + 1 + 15 * 0);
+    else if (counter < 10)
+      randomNumber = Math.floor(Math.random() * 15 + 1 + 15 * 1);
+    else if (counter < 14)
+      randomNumber = Math.floor(Math.random() * 15 + 1 + 15 * 2);
+    else if (counter < 19)
+      randomNumber = Math.floor(Math.random() * 15 + 1 + 15 * 3);
+    else if (counter < 24)
+      randomNumber = Math.floor(Math.random() * 15 + 1 + 15 * 4);
+    console.log("random : ", randomNumber, " bingo : ", bingo);
+
+    if (
+      !bingo.includes(`B${randomNumber}`) &&
+!bingo.includes(`I${randomNumber}`) &&
+!bingo.includes(`N${randomNumber}`) &&
+!bingo.includes(`G${randomNumber}`) &&
+!bingo.includes(`O${randomNumber}`)
+    ) {
+      console.log("inséré");
+
+      // Vérifier si le nombre est déjà dans le tableau
+if (bingo.length < 5) bingo.push("B" + randomNumber);
+      else if (bingo.length < 10) bingo.push("I" + randomNumber);
+      else if (bingo.length < 14) bingo.push("N" + randomNumber);
+      else if (bingo.length < 19) bingo.push("G" + randomNumber);
+      else if (bingo.length < 25) bingo.push("O" + randomNumber);
+      counter++;
+    }
+  }
+
+  return bingo;
+}
+```
+
