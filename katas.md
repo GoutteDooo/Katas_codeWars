@@ -1938,3 +1938,15 @@ function getSum(a, b)
 }
 ```
 
+# Sum of the first nth term of Series [7 kyu] #149
+
+```js
+function SeriesSum(n) {
+  let r = 0;
+  for (let i = 0; i < n; i++) {
+    r += i ? 1 / (i * 3 + 1) : 1;
+  }
+  return String(r.toFixed(2));
+}
+```
+
