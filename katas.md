@@ -758,3 +758,28 @@ word
 }
 ```
 
+# Your order, please [6 kyu] #62
+
+```js
+function order(words){
+  // ...
+if (!words.length) return "";
+  let letters = words.split(" ").map((word) => word.split("").map((l) => +l ? +l : l));
+  let indexToFind = 0;
+  for (let i = 0 ; i < letters.length ; i++) {
+    let temp = "";
+    for (let j = 0 ; j < letters[i].length ; j++) {
+      if (letters[i][j] === indexToFind+1) {
+        temp = letters[indexToFind];
+        letters[indexToFind] = letters[i];
+        letters[i] = temp;
+        indexToFind++;
+        i = 0;
+        continue;
+      }
+    }
+  }
+  return letters.map((word) => word.join("")).join(" ");
+}
+```
+
