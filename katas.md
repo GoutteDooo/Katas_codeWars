@@ -863,3 +863,26 @@ function howMuchILoveYou(nbPetals) {
 }
 ```
 
+# Count the Digit [7 kyu] #70
+
+```js
+function nbDig(n, d) {
+  // your code
+//créer une boucle pour implémenter le tableau des puissances
+let counter = 0;
+  let array = [];
+  for (let i = 1; i < n + 1; i++) {
+    array.push(i * i);
+  }
+  array = array.map((n) => n.toString());
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].length; j++) {
+      counter += array[i][j] === String(d) ? 1 : 0;
+    }
+  }
+  //une fois le tableau créé, rechercher le digit dans chaque élément (string), et incrémenter le compteur
+// retourner le compteur
+return d === 0 ? counter + 1 : counter;
+}
+```
+
