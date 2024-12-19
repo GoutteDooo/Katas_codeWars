@@ -1122,3 +1122,16 @@ return str
 
 ```
 
+# Ones and Zeros [7 kyu] #88
+
+```js
+const binaryArrayToNumber = (arr) => {
+  // your code
+return arr
+    .reverse()
+    .map((b, i) => (b = b == 1 ? (b + 1) ** i : 0))
+    .reverse()
+    .reduce((a, n) => a + n, 0);
+};
+```
+
