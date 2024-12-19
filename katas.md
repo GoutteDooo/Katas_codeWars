@@ -226,3 +226,12 @@ if (!array) return [];
 }
 ```
 
+# get character from ASCII Value [8 kyu] #18
+
+```js
+function getChar(c) {
+  // ...
+return String.fromCharCode(c);
+}
+```
+
