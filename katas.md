@@ -1577,3 +1577,12 @@ function noSpace(x) {
 }
 ```
 
+# You only need one - Beginner [8 kyu] #121
+
+```js
+function check(a, x) {
+  // your code here
+return a.find((n) => n === x) == undefined ? false : true;
+}
+```
+
