@@ -1878,3 +1878,11 @@ function abbrevName(name) {
 }
 ```
 
+# Remove exclamation marks [8 kyu] #144
+
+```js
+function removeExclamationMarks(s) {
+  return s.split("").filter(l => l !== "!").join("");
+}
+```
+
