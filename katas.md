@@ -1032,3 +1032,17 @@ function stray(numbers) {
 }
 ```
 
+# Two to One [7 kyu] #81
+
+```js
+function longest(s1, s2) {
+  // your code
+return s1
+    .concat(s2)
+    .split("")
+    .filter((char, i, self) => self.indexOf(char) === i)
+    .sort()
+    .join("");
+}
+```
+
