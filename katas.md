@@ -2275,3 +2275,12 @@ function sum(numbers) {
 }
 ```
 
+# Function 1 - hello world [8 kyu] #172
+
+```js
+// Write a function "greet" that returns "hello world!"
+const greet = () => {
+  return "hello world!";
+}
+```
+
