@@ -2388,3 +2388,27 @@ if (tempScore > maxScore) {
 }
 ```
 
+# Largest Elements [7 kyu] #179
+
+```js
+
+function largest(n, array) {
+  // Find the n highest elements in a list
+const arrayTested = array;
+  const newArray = [];
+  for (let i = 0; i < n; i++) {
+    let max = array[0];
+    let indexMax = 0;
+    for (let j = 0; j < array.length; j++) {
+      if (array[j] > max) {
+        max = array[j];
+        indexMax = j;
+      }
+    }
+    newArray.push(max);
+    arrayTested.splice(indexMax, 1);
+  }
+  return newArray.reverse();
+}
+```
+
