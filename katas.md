@@ -1054,3 +1054,26 @@ function countSheeps(sheeps) {
 }
 ```
 
+# Mumbling [7 kyu] #83
+
+```js
+
+function accum(s) {
+  if (!s.length) return false;
+  let currentLetter = "";
+  let newString = "";
+  for (let i = 0; i < s.length; i++) {
+    currentLetter = s[i];
+    console.log("currentLetter : ", currentLetter, " i : ", i);
+
+    for (let j = 0; j < i + 1; j++) {
+      newString +=
+j == 0 ? currentLetter.toUpperCase() : currentLetter.toLowerCase();
+      console.log("newString : ", newString, ", j = ", j);
+    }
+    if (i < s.length - 1) newString += "-";
+  }
+  return newString;
+}
+```
+
