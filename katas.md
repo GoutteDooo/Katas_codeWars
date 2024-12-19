@@ -1911,3 +1911,13 @@ function alphabetPosition(text) {
 }
 ```
 
+# Array.diff [6 kyu] #147
+
+```js
+
+function arrayDiff(a, b) {
+  console.log(a.filter((x) => x == 1));
+  return a.filter((x) => b.find((y) => y == x) !== x);
+}
+```
+
