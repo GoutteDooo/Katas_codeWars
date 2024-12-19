@@ -498,3 +498,12 @@ return Math.floor((year + 99)/100);
 }
 ```
 
+# Grasshopper - Terminal game combat function [8 kyu] #41
+
+```js
+function combat(health, damage) {
+  // Write your code here
+return health - damage < 0 ? 0 : health - damage;
+}
+```
+
