@@ -637,3 +637,12 @@ function countSmileys(arr) {
 }
 ```
 
+# Exclamation marks series #1: Remove an exclamation mark from the end of string [8 kyu] #51
+
+```js
+function remove (string) {
+  //coding and coding....
+return string[string.length - 1] === "!" ? string.split("").filter((l,i) => i !== string.length - 1).join("") : string;
+}
+```
+
