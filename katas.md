@@ -2152,3 +2152,26 @@ function pigIt(str) {
 }
 ```
 
+# Duplicate Encoder [6 kyu] #163
+
+```js
+function duplicateEncode(word) {
+  const counter = {};
+  let str = "";
+  for (const char of word) {
+    if (char.toLowerCase() in counter) {
+      counter[char.toLowerCase()] += 1;
+    } else {
+      counter[char.toLowerCase()] = 1;
+    }
+  }
+  return word
+    .split("")
+    .map((letter) => {
+      if (counter[letter.toLowerCase()] > 1) return ")";
+      else return "(";
+    })
+    .join("");
+}
+```
+
