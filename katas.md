@@ -2141,3 +2141,14 @@ return String.fromCharCode(((char.charCodeAt(0) - base + 13) % 26) + base);
 }
 ```
 
+# Simple Pig Latin [5 kyu] #162
+
+```js
+function pigIt(str) {
+  return str.replace(
+    /\b(\w)(\w*)\b/g,
+    (match, firstLetter, restOfWord) => `${restOfWord}${firstLetter}ay`
+  );
+}
+```
+
