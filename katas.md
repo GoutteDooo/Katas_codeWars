@@ -2220,3 +2220,11 @@ function dnaStrand(dna) {
 }
 ```
 
+# Sentence Smash [8 kyu] #167
+
+```js
+function smash (words) {
+   return words.join(" ");
+};
+```
+
