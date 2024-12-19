@@ -1839,3 +1839,15 @@ function stringToArray(string){
 }
 ```
 
+# Sum without highest and lowest number [8 kyu] #140
+
+```js
+function sumArray(array) {
+  if (!Array.isArray(array)) return 0;
+  return array
+    .sort((a, b) => b - a)
+    .slice(1, -1)
+    .reduce((a, c) => a + c, 0);
+}
+```
+
