@@ -1547,3 +1547,25 @@ function paperwork(n, m) {
 }
 ```
 
+# Twice as old [8 kyu] #119
+
+```js
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+let counter = 0;
+  if (dadYearsOld > sonYearsOld * 2) {
+    while (dadYearsOld > sonYearsOld * 2) {
+      dadYearsOld--;
+      counter++;
+    }
+  } else {
+    while (dadYearsOld < sonYearsOld * 2) {
+      dadYearsOld++;
+      counter++;
+    }
+
+  }
+  return counter;
+}
+```
+
