@@ -2292,3 +2292,15 @@ function maps(x){
 }
 ```
 
+# Friend or Foe? [7 kyu] #174
+
+```js
+function friend(friends) {
+  let isFriends = friends;
+  return isFriends.filter((friend) => {
+    if (friend.length !== 4) return false;
+    return /^[a-zA-Z]+$/.test(friend);
+  });
+}
+```
+
