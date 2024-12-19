@@ -121,3 +121,12 @@ return "Position of alphabet: " + String(letter.charCodeAt(0) - 96);
 }
 ```
 
+# Name Shuffler [8 kyu] #10
+
+```js
+function nameShuffler(str){
+  //Shuffle It
+return str.split(" ").reverse().join(" ");
+}
+```
+
