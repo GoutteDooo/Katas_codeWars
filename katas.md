@@ -47,3 +47,33 @@ const counts = values.reduce((a, n) => {
 }
 ```
 
+# Training JS #1: create your first JS function and print "Hello World!" [8 kyu] #5
+
+```js
+//refer to the example and write your first JS function
+function helloWorld() {
+  let str = "Hello World!";
+  
+  console.log(str);
+}
+```
+
+# Multiplication table [6 kyu] #6
+
+```js
+multiplicationTable = function (size) {
+  // insert code here
+const array = [];
+  let multiplicateur = 1;
+  for (let i = 0; i < size; i++) {
+    array.push([]);
+    for (let j = 0; j < size; j++) {
+      array[i].push(multiplicateur * (j + 1));
+    }
+    multiplicateur++;
+  }
+  return array;
+};
+
+```
+
