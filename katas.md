@@ -1405,3 +1405,12 @@ return String(num);
 }
 ```
 
+# All Star Code Challenge #18 [8 kyu] #105
+
+```js
+function strCount(str, letter) {
+  //code here
+return str.split("").filter((l) => l == letter).length;
+}
+```
+
