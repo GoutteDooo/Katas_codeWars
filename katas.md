@@ -2080,3 +2080,12 @@ function likes(names) {
 }
 ```
 
+# Returning Strings [8 kyu] #158
+
+```js
+function greet(name){
+  //your code here
+return `Hello, ${name} how are you doing today?`
+}
+```
+
