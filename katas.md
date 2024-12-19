@@ -1611,3 +1611,17 @@ return str.endsWith(ending);
 }
 ```
 
+# Mexican Wave [6 kyu] #124
+
+```js
+function wave(str) {
+  // Code here
+const result = [];
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") continue;
+    result.push(str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1));
+  }
+  return result;
+}
+```
+
