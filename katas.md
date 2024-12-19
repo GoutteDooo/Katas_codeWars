@@ -1017,3 +1017,18 @@ return current == "green" ? "yellow" : current == "yellow" ? "red" : "green";
 }
 ```
 
+# Find the stray number [7 kyu] #80
+
+```js
+function stray(numbers) {
+  return Number(
+    Object.entries(
+      numbers.reduce((a, n) => {
+        a[n] = (a[n] | 0) + 1;
+        return a;
+      }, {})
+    ).find(([key, value]) => value === 1)[0]
+  );
+}
+```
+
