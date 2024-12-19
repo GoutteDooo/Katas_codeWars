@@ -1586,3 +1586,19 @@ return a.find((n) => n === x) == undefined ? false : true;
 }
 ```
 
+# Consecutive strings [6 kyu] #122
+
+```js
+function longestConsec(strarr, k) {
+  let result = "";
+  if (k < 0) return result;
+  for (let i = 0; i < strarr.length - k + 1; i++) {
+    const consecutiveString = strarr.slice(i, k + i).join("");
+    result =
+result.length < consecutiveString.length ? consecutiveString : result;
+  }
+
+  return result;
+}
+```
+
