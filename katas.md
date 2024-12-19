@@ -886,3 +886,24 @@ return d === 0 ? counter + 1 : counter;
 }
 ```
 
+# Rot13 [5 kyu] #71
+
+```js
+
+function rot13(message) {
+  //your code here
+return message
+    .split("")
+    .map((l) => {
+      if (l.match(/[^a-zA-Z]/, l)) return l;
+      if (l === l.toLowerCase()) return ((l.charCodeAt(0) - 97 + 13) % 26) + 97;
+      if (l === l.toUpperCase()) return ((l.charCodeAt(0) - 65 + 13) % 26) + 65;
+    })
+    .map((n) => {
+      if (n === Number(n)) return String.fromCharCode(n);
+      return n;
+    })
+    .join("");
+}
+```
+
