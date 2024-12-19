@@ -2412,3 +2412,20 @@ const arrayTested = array;
 }
 ```
 
+# Strings, strings, strings (Easy) [7 kyu] #180
+
+```js
+Boolean.prototype.toString = function () {
+  return this.valueOf() ? "true" : "false";
+};
+
+Number.prototype.toString = function () {
+  return `${this.valueOf()}`;
+};
+
+Array.prototype.toString = function () {
+  const newArray = this.join(", "); //joint tout les éléments du tableau entre eux, et les sépare d'une virgule
+return `[${newArray}]`;
+};
+```
+
