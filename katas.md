@@ -407,3 +407,11 @@ function powersOfTwo(n){
 }
 ```
 
+# Sum of positive [8 kyu] #33
+
+```js
+function positiveSum(arr) {
+  return arr.filter((n) => n > 0).reduce((a,n) => a + n,0);
+}
+```
+
