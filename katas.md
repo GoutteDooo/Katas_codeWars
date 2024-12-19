@@ -1245,3 +1245,32 @@ function bmi(w, h) {
 }
 ```
 
+# Welcome! [8 kyu] #96
+
+```js
+function greet(language) {
+  const database = [
+    ["english", "Welcome"],
+    ["czech", "Vitejte"],
+    ["danish", "Velkomst"],
+    ["dutch", "Welkom"],
+    ["estonian", "Tere tulemast"],
+    ["finnish", "Tervetuloa"],
+    ["flemish", "Welgekomen"],
+    ["french", "Bienvenue"],
+    ["german", "Willkommen"],
+    ["irish", "Failte"],
+    ["italian", "Benvenuto"],
+    ["latvian", "Gaidits"],
+    ["lithuanian", "Laukiamas"],
+    ["polish", "Witamy"],
+    ["spanish", "Bienvenido"],
+    ["swedish", "Valkommen"],
+    ["welsh", "Croeso"],
+  ];
+  return database.filter((e) => e[0] === language).length
+? database.filter((e) => e[0] === language)[0][1]
+    : "Welcome";
+}
+```
+
