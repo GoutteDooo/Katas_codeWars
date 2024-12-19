@@ -252,3 +252,20 @@ return str.split("").map((char) => char.toUpperCase()).join("");
 }
 ```
 
+# No zeros for heros [8 kyu] #21
+
+```js
+function noBoringZeros(n) {
+  // your code
+const array = n.toString().split("");
+  for (let i = array.length - 1; i >= 0; i--) {
+    if (array[i] === "0") {
+      array.splice(i, 1);
+    } else {
+      break;
+    }
+  }
+  return +array.join("");
+}
+```
+
