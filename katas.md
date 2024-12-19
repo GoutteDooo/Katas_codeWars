@@ -2448,3 +2448,11 @@ max < Math.abs(a1[i].length - a2[j].length)
 }
 ```
 
+# Convert to Binary [8 kyu] #182
+
+```js
+function toBinary(n){
+  return +n.toString(2);
+}
+```
+
