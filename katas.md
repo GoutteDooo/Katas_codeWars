@@ -96,3 +96,19 @@ if (n < 3) return signature.reduce((a, n) => a + n, 0);
 }
 ```
 
+# Simple Fun #176: Reverse Letter [7 kyu] #8
+
+```js
+function reverseLetter(str) {
+  const acceptedLetters = "abcdefghijklmnopqrstuvwxyz".split("");
+  console.log(acceptedLetters[2]);
+
+  //coding and coding..
+return str
+    .split("")
+    .filter((char, i) => char == acceptedLetters.find((l) => l == char))
+    .reverse()
+    .join("");
+}
+```
+
