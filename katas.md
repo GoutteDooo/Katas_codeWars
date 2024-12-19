@@ -559,3 +559,30 @@ return x === +x ? x * 50 + 6 : "Error"
 }
 ```
 
+# Give me a Diamond [6 kyu] #47
+
+```js
+function diamond(n) {
+  if (n <= 0 || n % 2 === 0) return null;
+  let str = "";
+  let counter = 1;
+  let sorting = true;
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < (n - counter) / 2; j++) {
+      str += " ";
+    }
+    for (let j = 0; j < counter; j++) {
+      str += "*";
+      // console.log("counter : ", counter);
+    }
+    str += "\n";
+    if (counter >= n) {
+      sorting = false;
+    }
+    if (sorting) counter += 2;
+    else counter -= 2;
+  }
+  return str;
+}
+```
+
