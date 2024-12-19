@@ -1135,3 +1135,17 @@ return arr
 };
 ```
 
+# altERnaTIng cAsE <=> ALTerNAtiNG CaSe [8 kyu] #89
+
+```js
+String.prototype.toAlternatingCase = function () {
+  // Define your method here :)
+return this.split("")
+    .map((l) => {
+      if (l == l.toUpperCase()) return l.toLowerCase();
+      if (l == l.toLowerCase()) return l.toUpperCase();
+    })
+    .join("");
+};
+```
+
