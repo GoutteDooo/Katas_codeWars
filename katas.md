@@ -1077,3 +1077,11 @@ j == 0 ? currentLetter.toUpperCase() : currentLetter.toLowerCase();
 }
 ```
 
+# Beginner Series #2 Clock [8 kyu] #84
+
+```js
+function past(h, m, s){
+  return h * 3600 * 1000 + m * 60 * 1000 + s * 1000;
+}
+```
+
