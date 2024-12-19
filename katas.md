@@ -1869,3 +1869,12 @@ function makeNegative(num) {
 }
 ```
 
+# Abbreviate a Two Word Name [8 kyu] #143
+
+```js
+
+function abbrevName(name) {
+  return name.match(/\b[a-zA-Z]/g).join(".").toUpperCase();
+}
+```
+
