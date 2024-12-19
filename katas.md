@@ -1149,3 +1149,19 @@ return this.split("")
 };
 ```
 
+# Remove the minimum [7 kyu] #90
+
+```js
+function removeSmallest(numbers) {
+  if (!numbers.length) return [];
+  let smallest = numbers[0];
+  return numbers
+    .map((n) => {
+      smallest = smallest < n ? smallest : n;
+
+      return n;
+    })
+    .filter((n, i, s) => s.indexOf(smallest) !== i);
+}
+```
+
