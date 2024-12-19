@@ -77,3 +77,22 @@ const array = [];
 
 ```
 
+# Tribonacci Sequence [6 kyu] #7
+
+```js
+function tribonacci(signature, n) {
+  //your code here
+if (n === 0) return [];
+  if (n === 1) return [signature[0]];
+  // if (n === 2) return [signature[0] + signature[1]];
+if (n < 3) return signature.reduce((a, n) => a + n, 0);
+  for (let i = 0; i < n - 3; i++) {
+    let nextValue = signature
+      .filter((n, i) => i >= signature.length - 3)
+      .reduce((a, n) => a + n, 0);
+    signature.push(nextValue);
+  }
+  return signature;
+}
+```
+
