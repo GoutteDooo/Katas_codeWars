@@ -1426,3 +1426,17 @@ function repeatStr(n, s) {
 }
 ```
 
+# Equal Sides Of An Array [6 kyu] #107
+
+```js
+function findEvenIndex(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    const sumLeft = arr.reduce((a, n, j) => (j < i ? a + n : a), 0);
+    const sumRight = arr.reduce((a, n, j) => (j > i ? a + n : a), 0);
+    console.log("i : ", i, sumLeft, sumRight);
+    if (sumLeft === sumRight) return i;
+  }
+  return -1;
+}
+```
+
