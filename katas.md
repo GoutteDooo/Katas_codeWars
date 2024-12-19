@@ -1449,3 +1449,11 @@ return Math.floor((s / 3600) * 100000);
 }
 ```
 
+# Vowel Count [7 kyu] #109
+
+```js
+function getCount(str) {
+  return str.match(/[aeiou]/g) ? str.match(/[aeiou]/g).length : 0;
+}
+```
+
