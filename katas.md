@@ -1287,3 +1287,16 @@ function rentalCarCost(d) {
 }
 ```
 
+# How good are you really? [8 kyu] #98
+
+```js
+function betterThanAverage(classPoints, yourPoints) {
+  // Your code here
+const mates = classPoints.length;
+  return yourPoints > classPoints.reduce((a, n) => a + n, 0) / mates
+? true
+    : false;
+}
+
+```
+
