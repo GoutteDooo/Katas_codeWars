@@ -1809,3 +1809,15 @@ A.reduce((a, n) => {
 }
 ```
 
+# Reversed sequence [8 kyu] #137
+
+```js
+const reverseSeq = (n) => {
+  const newArray = [];
+  for (let i = 0; i < n; i++) {
+    newArray.push(n - i);
+  }
+  return newArray;
+};
+```
+
