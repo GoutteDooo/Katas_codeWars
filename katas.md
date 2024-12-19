@@ -281,3 +281,12 @@ function isTriangle(a, b, c) {
 }
 ```
 
+# Grasshopper - Terminal game move function [8 kyu] #23
+
+```js
+function move (position, roll) {
+  // return the new position
+return position + roll * 2
+}
+```
+
