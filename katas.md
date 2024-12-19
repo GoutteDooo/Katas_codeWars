@@ -663,3 +663,16 @@ return array.map((n,i) => `${i+1}: ${n}`)
 }
 ```
 
+# Sum of a sequence [7 kyu] #54
+
+```js
+const sequenceSum = (begin, end, step) => {
+  // May the Force be with you
+let sum = 0;
+  for (let i = begin; i <= end; i = i + step) {
+    sum += i
+  }
+  return sum;
+};
+```
+
