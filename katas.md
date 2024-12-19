@@ -30,3 +30,20 @@ function sumDigits(number) {
 }
 ```
 
+# Form The Minimum [7 kyu] #4
+
+```js
+function minValue(values) {
+  //your code here
+const counts = values.reduce((a, n) => {
+    a[n] = (a[n] || 0) + 1;
+    return a;
+  }, {});
+  return +values
+    .sort((a, b) => a - b)
+    .filter((n, i, self) => self.indexOf(n) === i)
+    .map((n) => n.toString())
+    .join("");
+}
+```
+
