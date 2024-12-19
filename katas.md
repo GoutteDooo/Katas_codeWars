@@ -598,3 +598,20 @@ return word
 };
 ```
 
+# Total amount of points [8 kyu] #49
+
+```js
+function points(games) {
+  let totalScore = 0;
+  for (let i = 0; i < games.length; i++) {
+    totalScore +=
+games[i][0] - games[i][2] > 0
+? 3
+        : games[i][0] - games[i][2] < 0
+? 0
+        : 1;
+  }
+  return totalScore;
+}
+```
+
