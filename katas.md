@@ -844,3 +844,22 @@ return Math.abs(a.reduce((a, n) => a * n, 1) - b.reduce((a, n) => a * n, 1));
 }
 ```
 
+# I love you, a little , a lot, passionately ... not at all [8 kyu] #69
+
+```js
+function howMuchILoveYou(nbPetals) {
+  const phrases = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all",
+  ];
+
+  return phrases[(nbPetals - 1) % 6];
+
+  // your code
+}
+```
+
