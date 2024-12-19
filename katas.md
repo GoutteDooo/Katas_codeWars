@@ -441,3 +441,16 @@ return string.split(" ").reverse().join(" ");
 }
 ```
 
+# Count of positives / sum of negatives [8 kyu] #37
+
+```js
+function countPositivesSumNegatives(input) {
+  if (!input) return [];
+  const max = input.filter((n) => n > 0).length;
+  const min = input.filter((n) => n < 0).reduce((a, n) => a + n, 0);
+  if (max == 0 && min == 0) return []
+  // your code here
+return [max, min];
+}
+```
+
