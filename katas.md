@@ -1744,3 +1744,21 @@ function minMax(arr) {
 }
 ```
 
+# Bouncing Balls [6 kyu] #132
+
+```js
+function bouncingBall(h, bounce, window) {
+  let c = 0;
+  let isFalling = true;
+  if (h <= window || bounce >= 1 || bounce <= 0) return -1;
+  do {
+    if (!isFalling) {
+      h = h * bounce;
+    }
+    c += h > window ? 1 : 0;
+    isFalling = !isFalling;
+  } while (h > window);
+  return c;
+}
+```
+
