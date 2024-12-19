@@ -1371,3 +1371,15 @@ function pattern(n) {
 }
 ```
 
+# Number of People in the Bus [7 kyu] #102
+
+```js
+var number = function (busStops) {
+  let peopleIn = 0;
+  for (let i = 0; i < busStops.length; i++) {
+    peopleIn += busStops[i][0] - busStops[i][1];
+  }
+  return peopleIn;
+};
+```
+
