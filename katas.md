@@ -2175,3 +2175,18 @@ function duplicateEncode(word) {
 }
 ```
 
+# Maximum subarray sum [5 kyu] #164
+
+```js
+var maxSequence = function (arr) {
+  let maxSum = 0;
+  let tempSum = 0;
+  for (const numb of arr) {
+    tempSum += numb;
+    if (tempSum < 0) tempSum = 0;
+    maxSum = maxSum < tempSum ? tempSum : maxSum;
+  }
+  return maxSum;
+};
+```
+
