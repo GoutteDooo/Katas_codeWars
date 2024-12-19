@@ -799,3 +799,22 @@ function litres(time) {
 }
 ```
 
+# Filter out the geese [8 kyu] #65
+
+```js
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  const array = []
+  for (let i = 0 ; i < birds.length ; i++) {
+    let isGeese = false;
+    for (let j = 0 ; j < geese.length ; j++) {
+      if (geese[j] === birds[i]) {isGeese = true;}
+    }
+    if (!isGeese) array.push(birds[i])
+  }
+  
+  // return an array containing all of the strings in the input array except those that match strings in geese
+return array;
+};
+```
+
