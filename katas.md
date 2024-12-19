@@ -1861,3 +1861,11 @@ var summation = function (num) {
 }
 ```
 
+# Return Negative [8 kyu] #142
+
+```js
+function makeNegative(num) {
+  return num < 0 ? num : -num;
+}
+```
+
