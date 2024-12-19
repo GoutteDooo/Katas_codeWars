@@ -1396,3 +1396,12 @@ function printerError(s) {
 }
 ```
 
+# Convert a Number to a String! [8 kyu] #104
+
+```js
+function numberToString(num) {
+  // Return a string of the number here!
+return String(num);
+}
+```
+
