@@ -1967,3 +1967,16 @@ function digPow(n, p) {
 }
 ```
 
+# Categorize New Member [7 kyu] #151
+
+```js
+function openOrSenior(data){
+  strArray = [];
+  for (let i = 0 ; i < data.length ; i++) {
+    if (data[i][0] > 54 && data[i][1] > 7) strArray.push("Senior");
+    else strArray.push("Open");
+  }
+  return strArray;
+}
+```
+
