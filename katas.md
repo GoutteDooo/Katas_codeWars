@@ -1784,3 +1784,13 @@ function greet (name, owner) {
 }
 ```
 
+# DNA to RNA Conversion [8 kyu] #135
+
+```js
+
+function DNAtoRNA(dna) {
+  return dna.replace(/[T]/g, "U");
+}
+
+```
+
