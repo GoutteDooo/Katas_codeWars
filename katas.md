@@ -1085,3 +1085,13 @@ function past(h, m, s){
 }
 ```
 
+# Keep up the hoop [8 kyu] #85
+
+```js
+
+function hoopCount(n) {
+  //your code goes here
+return n > 9 ? "Great, now move on to tricks" : "Keep at it until you get it";
+}
+```
+
