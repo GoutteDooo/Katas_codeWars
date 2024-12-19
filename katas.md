@@ -6,3 +6,14 @@ function otherAngle(a, b) {
 }
 ```
 
+# Hex to Decimal [8 kyu] #2
+
+```js
+function hexToDec(hexString) {
+  //your code here
+return Number("0x" + hexString)
+    ? Number("0x" + hexString)
+    : -Number("0x" + hexString.slice(1));
+}
+```
+
