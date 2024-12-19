@@ -1794,3 +1794,18 @@ function DNAtoRNA(dna) {
 
 ```
 
+# Find the odd int [6 kyu] #136
+
+```js
+
+function findOdd(A) {
+  return A.find(
+    (x) =>
+A.reduce((a, n) => {
+        a[n] = (a[n] || 0) + 1;
+        return a;
+      }, {})[x] % 2
+  );
+}
+```
+
