@@ -690,3 +690,12 @@ var max = function(list){
 }
 ```
 
+# Opposite number [8 kyu] #56
+
+```js
+function opposite(number) {
+  //your code here
+return -number
+}
+```
+
