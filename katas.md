@@ -130,3 +130,15 @@ return str.split(" ").reverse().join(" ");
 }
 ```
 
+# Descending Order [7 kyu] #11
+
+```js
+function descendingOrder(n) {
+  return +n
+    .toString()
+    .split("")
+    .sort((a, b) => b - a)
+    .join("");
+}
+```
+
