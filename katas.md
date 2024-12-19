@@ -489,3 +489,12 @@ return total
 }
 ```
 
+# Century From Year [8 kyu] #40
+
+```js
+function century(year) {
+  // Finish this :)
+return Math.floor((year + 99)/100);
+}
+```
+
