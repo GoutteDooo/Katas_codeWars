@@ -1187,3 +1187,12 @@ for (let i = 1; i < length + 1; i++) {
 }
 ```
 
+# Convert a String to a Number! [8 kyu] #92
+
+```js
+const stringToNumber = function(str){
+  // put your code here
+return +str;
+}
+```
+
