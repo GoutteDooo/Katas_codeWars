@@ -1851,3 +1851,13 @@ function sumArray(array) {
 }
 ```
 
+# Grasshopper - Summation [8 kyu] #141
+
+```js
+var summation = function (num) {
+  let res = num;
+  if (!num) return false;
+  return res + summation(num-1);
+}
+```
+
