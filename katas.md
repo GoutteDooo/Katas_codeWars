@@ -2101,3 +2101,32 @@ function reverseBits(n) {
 }
 ```
 
+# Counting Duplicates [6 kyu] #160
+
+```js
+function duplicateCount(text) {
+  const counter = {};
+  for (char of text) {
+    if (char.toLowerCase() in counter) {
+      counter[char.toLowerCase()] += 1;
+    } else {
+      counter[char.toLowerCase()] = 1;
+    }
+    if (!text.length) return 0;
+  }
+  console.log(counter);
+  let maxValue = 2;
+  let numberMaxValue = 0;
+  for (value in counter) {
+    console.log("value : ", counter[value]);
+    numberMaxValue += counter[value] > 1 ? 1 : 0;
+    if (maxValue < counter[value]) {
+      maxValue = counter[value];
+      numberMaxValue = 1;
+    }
+  }
+  console.log(numberMaxValue);
+  return numberMaxValue;
+}
+```
+
