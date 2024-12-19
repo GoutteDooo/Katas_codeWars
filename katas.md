@@ -1695,3 +1695,36 @@ return arr.filter((n, i) => i % 2 == 0);
 }
 ```
 
+# Persistent Bugger. [6 kyu] #130
+
+```js
+function persistence(num) {
+  //code me
+let count = 0;
+  let result = 1;
+  let arrayNum = num
+    .toString()
+    .split("")
+    .map((n) => Number(n));
+  console.log("array avant boucle : ", arrayNum);
+  if (num.toString().length == 1) return 0;
+
+  do {
+    for (let i = 0; i < arrayNum.length; i++) {
+      result *= arrayNum[i];
+      console.log("result for : ", arrayNum[i]);
+    }
+    count++;
+    if (result.toString().length == 1) break;
+    arrayNum.splice(0, arrayNum.length);
+    arrayNum = result
+      .toString()
+      .split("")
+      .map((n) => Number(n));
+    console.log("new arrayNum : ", arrayNum);
+    result = 1;
+  } while (true);
+  return count;
+}
+```
+
