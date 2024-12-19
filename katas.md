@@ -2329,3 +2329,20 @@ return mins[0] + mins[1];
 }
 ```
 
+# You're a square! [7 kyu] #176
+
+```js
+const isSquare = function (n) {
+  if (n === 0) return true;
+  for (
+    let difference = 1;
+    difference < 100000;
+    difference++ //1000 est une sécurité
+  ) {
+    if (n / difference === difference) return true;
+  }
+  //la difference n'a pas été trouvée
+return false;
+};
+```
+
