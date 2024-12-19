@@ -539,3 +539,14 @@ const abcd = "abcdefghijklmnopqrstuvwxyz".split("");
 };
 ```
 
+# Grasshopper - Messi goals function [8 kyu] #45
+
+```js
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+
+
+```
+
