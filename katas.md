@@ -654,3 +654,12 @@ function saleHotdogs(n){
 }
 ```
 
+# Testing 1-2-3 [7 kyu] #53
+
+```js
+var number=function(array){
+  //your awesome code here
+return array.map((n,i) => `${i+1}: ${n}`)
+}
+```
+
