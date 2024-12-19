@@ -112,3 +112,12 @@ return str
 }
 ```
 
+# Find the position! [8 kyu] #9
+
+```js
+function position(letter){
+  //Write your own Code!
+return "Position of alphabet: " + String(letter.charCodeAt(0) - 96);
+}
+```
+
