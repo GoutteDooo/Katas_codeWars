@@ -185,3 +185,12 @@ title[i].charAt(0).toUpperCase() + title[i].slice(1).toLowerCase();
 }
 ```
 
+# Plural [8 kyu] #14
+
+```js
+function plural(n) {
+  // ...
+return n == 1 ? false : true
+}
+```
+
