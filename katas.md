@@ -243,3 +243,12 @@ function reverseList(list) {
 }
 ```
 
+# MakeUpperCase [8 kyu] #20
+
+```js
+function makeUpperCase(str) {
+  // Code here
+return str.split("").map((char) => char.toUpperCase()).join("");
+}
+```
+
