@@ -1677,3 +1677,11 @@ function evenOrOdd(number) {
 }
 ```
 
+# Break camelCase [6 kyu] #128
+
+```js
+function solution(string) {
+  return string.replace(/[A-Z]/g, (char) => " " + char);
+}
+```
+
