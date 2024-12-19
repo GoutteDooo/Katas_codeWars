@@ -206,3 +206,11 @@ return x
 }
 ```
 
+# Beginner - Reduce but Grow [8 kyu] #16
+
+```js
+function grow(x){
+  return x.reduce((a,n) => a = a * n, 1)
+}
+```
+
