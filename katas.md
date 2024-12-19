@@ -142,3 +142,15 @@ function descendingOrder(n) {
 }
 ```
 
+# Find the middle element [7 kyu] #12
+
+```js
+function gimme(triplet) {
+  //trouver le gimme
+const gimme = [...triplet].sort((a, b) => a - b)[1];
+
+  //le retourner
+return triplet.findIndex((n) => n === gimme);
+}
+```
+
