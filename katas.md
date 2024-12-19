@@ -1300,3 +1300,16 @@ const mates = classPoints.length;
 
 ```
 
+# Correct the mistakes of the character recognition software [8 kyu] #99
+
+```js
+function correct(string) {
+  // your code here
+return string.replace(/[015]/g, (char) => {
+    if (char == 0) return "O";
+    if (char == 1) return "I";
+    if (char == 5) return "S";
+  });
+}
+```
+
