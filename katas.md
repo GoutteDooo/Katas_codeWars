@@ -737,3 +737,11 @@ const base = {
 }
 ```
 
+# What's the real floor? [8 kyu] #60
+
+```js
+function getRealFloor(n) {
+  return n < 14 ? n < 1 ? n : n-1 : n - 2;
+}
+```
+
