@@ -916,3 +916,14 @@ function hero(bullets, dragons){
 
 ```
 
+# Will you make it? [8 kyu] #73
+
+```js
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+return distanceToPump <= mpg * fuelLeft ? true : false;
+};
+
+
+```
+
