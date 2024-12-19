@@ -971,3 +971,20 @@ function countBy(x, n) {
 }
 ```
 
+# Quarter of the year [8 kyu] #77
+
+```js
+const quarterOf = (month) => {
+  // Your code here
+return month < 4
+? 1
+    : month < 7
+? 2
+    : month < 10
+? 3
+    : month < 13
+? 4
+    : false;
+};
+```
+
