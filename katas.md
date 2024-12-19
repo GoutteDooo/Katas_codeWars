@@ -194,3 +194,15 @@ return n == 1 ? false : true
 }
 ```
 
+# RaNDoM CAsE [7 kyu] #15
+
+```js
+function randomCase(x) {
+  // Code your solution here
+return x
+    .split("")
+    .map((l) => (Math.random() < 0.5 ? l.toLowerCase() : l.toUpperCase()))
+    .join("");
+}
+```
+
