@@ -394,3 +394,16 @@ original.toLowerCase().split("").sort().join("")
 };
 ```
 
+# Powers of 2 [8 kyu] #32
+
+```js
+function powersOfTwo(n){
+  const array = [];
+  if (n < 0) return false;
+  for (let i = 0 ; i < n+1 ; i++) {
+    array.push(2**i)
+  }
+  return array;
+}
+```
+
