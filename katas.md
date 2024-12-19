@@ -827,3 +827,11 @@ return Number(inputString[0])
 }
 ```
 
+# Square(n) Sum [8 kyu] #67
+
+```js
+function squareSum(numbers){
+  return numbers.reduce((a,n) => a + n*n,0)
+}
+```
+
