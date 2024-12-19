@@ -2236,3 +2236,19 @@ function disemvowel(str) {
 }
 ```
 
+# Get the Middle Character [7 kyu] #169
+
+```js
+function getMiddle(s) {
+  const sArray = s.split("");
+  console.log(sArray);
+  const middleArray = sArray.length / 2;
+  const isPair = sArray.length % 2 ? false : true;
+  console.log(middleArray);
+  //   console.log("test : ", sArray.splice(2, 2));
+return isPair
+? sArray.splice(middleArray - 1, 2).join("")
+    : sArray.splice(Math.floor(middleArray), 1).join("");
+}
+```
+
