@@ -525,3 +525,17 @@ return String(b)
 }
 ```
 
+# Is the string uppercase? [8 kyu] #44
+
+```js
+String.prototype.isUpperCase = function () {
+  // your code here
+const abcd = "abcdefghijklmnopqrstuvwxyz".split("");
+  console.log(abcd);
+
+  return this.split("").filter((c) => abcd.includes(c)).length > 0
+? false
+    : true;
+};
+```
+
