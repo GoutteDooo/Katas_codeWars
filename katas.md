@@ -1992,3 +1992,13 @@ for (let i = 1 ; i < num + 1 ; i++)  {
 }
 ```
 
+# A Needle in the Haystack [8 kyu] #153
+
+```js
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.findIndex((word, index) => {
+    if (word == "needle") return true;
+  })}`;
+}
+```
+
