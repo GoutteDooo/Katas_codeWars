@@ -1829,3 +1829,13 @@ function solution(str){
 }
 ```
 
+# Convert a string to an array [8 kyu] #139
+
+```js
+function stringToArray(string){
+
+  return string.split(" ");
+
+}
+```
+
