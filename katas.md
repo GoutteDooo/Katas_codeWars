@@ -1886,3 +1886,15 @@ function removeExclamationMarks(s) {
 }
 ```
 
+# Remove First and Last Character [8 kyu] #145
+
+```js
+function removeChar(str) {
+  return str
+    .split("")
+    .filter((l, i) => i !== 0)
+    .filter((l, i) => i < str.length - 2)
+  .join("");
+}
+```
+
