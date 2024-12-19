@@ -1095,3 +1095,17 @@ return n > 9 ? "Great, now move on to tricks" : "Keep at it until you get it";
 }
 ```
 
+# Isograms [7 kyu] #86
+
+```js
+function isIsogram(str) {
+  //...
+const strSorted = str.toLowerCase().split("").sort().join("");
+  for (let i = 0; i < str.length - 1; i++) {
+    if (strSorted[i].toLowerCase() == strSorted[i + 1].toLowerCase())
+      return false;
+  }
+  return true;
+}
+```
+
