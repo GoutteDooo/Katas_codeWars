@@ -955,3 +955,11 @@ lastF = tempF; //f(n-1) = f(n)
 }
 ```
 
+# Sum Mixed Array [8 kyu] #75
+
+```js
+function sumMix(x) {
+  return x.map((ele) => +ele).reduce((a,n) => a + n, 0);
+}
+```
+
