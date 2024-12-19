@@ -2089,3 +2089,15 @@ return `Hello, ${name} how are you doing today?`
 }
 ```
 
+# Reverse the bits in an integer [7 kyu] #159
+
+```js
+
+function reverseBits(n) {
+  const nBits = n.toString(2);
+  const nReversed = nBits.toString().split("").reverse().join("");
+  const integer = parseInt(nReversed, 2);
+  return integer;
+}
+```
+
