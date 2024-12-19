@@ -1109,3 +1109,16 @@ const strSorted = str.toLowerCase().split("").sort().join("");
 }
 ```
 
+# Reverse words [7 kyu] #87
+
+```js
+function reverseWords(str) {
+  // Go for it
+return str
+    .split(" ")
+    .map((words) => words.split("").reverse().join(""))
+    .join(" ");
+}
+
+```
+
