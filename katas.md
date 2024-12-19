@@ -1165,3 +1165,25 @@ function removeSmallest(numbers) {
 }
 ```
 
+# Sum of odd numbers [7 kyu] #91
+
+```js
+function rowSumOddNumbers(n) {
+  // TODO
+let length = 0;
+  for (let i = 1; i < n + 1; i++) {
+    length += i;
+  }
+  //length définie, on prend length impairs
+let result = 0;
+  let currentOdd = 0;
+  //Générer la liste de nombres impaires
+for (let i = 1; i < length + 1; i++) {
+    currentOdd = i + i - 1;
+    result += i > length - n ? currentOdd : 0;
+  }
+
+  return result;
+}
+```
+
