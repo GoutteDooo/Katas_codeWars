@@ -316,3 +316,28 @@ return base % factor ? false : true
 }
 ```
 
+# Are they the "same"? [6 kyu] #27
+
+```js
+function comp(array1, array2) {
+  if (array1 == [] || array1 == null || array2 == [] || array2 == null)
+    return false;
+  if (array1.length !== array2.length) return false;
+  for (let i = 0; i < array1.length; i++) {
+    let isSquare = false; //Va checker si l'une des valeurs correspond dans b
+for (let j = 0; j < array1.length; j++) {
+      if (array1[i] * array1[i] === array2[j]) {
+        console.log("r", array2[j]);
+        array2.splice(j, 1);
+        console.log("1:", array1);
+        console.log("2", array2);
+        isSquare = true;
+        break;
+      }
+    }
+    if (!isSquare) return false; //Aucun carré n'a été trouvé lors de la recherche de l'élément i
+  }
+  return array2.length ? false : true; //Si on est arrivé jusqu'ici, c'est que toutes les conditions ont été remplies
+}
+```
+
