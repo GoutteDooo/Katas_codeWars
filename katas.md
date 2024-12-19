@@ -307,3 +307,12 @@ function sayHello(name) {
 }
 ```
 
+# Grasshopper - Check for factor [8 kyu] #26
+
+```js
+function checkForFactor (base, factor) {
+  // code here
+return base % factor ? false : true
+}
+```
+
