@@ -1046,3 +1046,11 @@ return s1
 }
 ```
 
+# Counting sheep... [8 kyu] #82
+
+```js
+function countSheeps(sheeps) {
+  return sheeps.filter((sheep) => sheep == true).length;
+}
+```
+
