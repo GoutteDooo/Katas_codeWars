@@ -1483,3 +1483,17 @@ return number % 2 == 0 ? number * 8 : number *9;
 
 ```
 
+# Grasshopper - Grade book [8 kyu] #113
+
+```js
+function getGrade (s1, s2, s3) {
+  const moyenne = (s1+s2+s3) / 3;
+  if (moyenne < 60) return "F";
+  if (moyenne < 70) return "D";
+  if (moyenne < 80) return "C";
+  if (moyenne < 90) return "B";
+  return "A";
+  
+}
+```
+
