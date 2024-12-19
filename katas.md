@@ -17,3 +17,16 @@ return Number("0x" + hexString)
 }
 ```
 
+# Summing a number's digits [7 kyu] #3
+
+```js
+function sumDigits(number) {
+  return number
+    .toString()
+    .split("")
+    .filter((char) => char >= 0 && char < 10)
+    .map((n) => +n)
+    .reduce((a, n) => a + n, 0);
+}
+```
+
