@@ -2346,3 +2346,11 @@ return false;
 };
 ```
 
+# Convert boolean values to strings 'Yes' or 'No'. [8 kyu] #177
+
+```js
+function boolToWord( bool ){
+  return bool ? "Yes" : "No"
+}
+```
+
