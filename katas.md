@@ -2487,3 +2487,19 @@ function rainAmount(mm){
 }
 ```
 
+# Lario and Muigi Pipe Problem [8 kyu] #185
+
+```js
+function pipeFix(numbers) {
+  const max = numbers
+    .sort((a, b) => a - b)
+    .filter((n, i) => i === numbers.length - 1);
+  const min = numbers.sort((a, b) => a - b).filter((n, i) => i === 0);
+  return numbers
+    .sort((a, b) => a - b)
+    .filter((n, i) => i === 0 || i === numbers.length - 1)
+    .concat(Array.from({ length: max - min - 1 }, (_, i) => numbers[0] + i + 1))
+    .sort((a, b) => a - b);
+}
+```
+
