@@ -2503,3 +2503,13 @@ function pipeFix(numbers) {
 }
 ```
 
+# Add Length [8 kyu] #186
+
+```js
+function addLength(str) {
+//start-here
+return str.split(" ").map((substr) => substr + " " + substr.length.toString());
+}
+
+```
+
