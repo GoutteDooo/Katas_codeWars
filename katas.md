@@ -2656,3 +2656,15 @@ professionName[0].toLowerCase() === profession.toLowerCase()
 }
 ```
 
+# Find the smallest integer in the array [8 kyu] #196
+
+```js
+export function findSmallestInt(args: number[]): number {
+  //   throw new Error("This method or operation is not implemented.");
+return args.reduce((a, n) => {
+    console.log(a, n);
+    return Math.min(a, n);
+  });
+}
+```
+
