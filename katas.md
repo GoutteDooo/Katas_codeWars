@@ -2632,3 +2632,27 @@ class Person {
 }
 ```
 
+# L1: Bartender, drinks! [8 kyu] #195
+
+```js
+export function getDrinkByProfession(profession: string): string {
+  const drinkByProfession = [
+    ["Jabroni", "Patron Tequila"],
+    ["School Counselor", "Anything with Alcohol"],
+    ["Programmer", "Hipster Craft Beer"],
+    ["Bike Gang Member", "Moonshine"],
+    ["Politician", "Your tax dollars"],
+    ["Rapper", "Cristal"],
+  ];
+  return drinkByProfession.filter(
+    (professionName) =>
+professionName[0].toLowerCase() === profession.toLowerCase()
+  ).length
+? drinkByProfession.filter(
+        (professionName) =>
+professionName[0].toLowerCase() === profession.toLowerCase()
+      )[0][1]
+    : "Beer";
+}
+```
+
