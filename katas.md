@@ -2538,3 +2538,17 @@ return nums.reduce((a,n) => a + n,0) / nums.length;
 }
 ```
 
+# Multiplication table for number [8 kyu] #189
+
+```js
+function multiTable(number) {
+  // good luck
+let str = "";
+  for (let i = 0 ; i < 10 ; i++) {
+    str += `${(i+1)} * ${number} = ${(i+1) * number}`;
+    if (i !== 9) str += "\n"
+  }
+  return str;
+}
+```
+
