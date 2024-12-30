@@ -2560,3 +2560,25 @@ function fakeBin(x){
 }
 ```
 
+# Color Ghost [8 kyu] #191
+
+```js
+class Ghost {
+  constructor() {
+    this._rng = Math.floor(Math.random() * 4);
+    this._color =
+this._rng === 0
+? "red"
+        : this._rng === 1
+? "yellow"
+        : this._rng === 2
+? "white"
+        : "purple";
+  }
+
+  get color() {
+    return this._color;
+  }
+}
+```
+
