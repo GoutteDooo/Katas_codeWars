@@ -2513,3 +2513,19 @@ return str.split(" ").map((substr) => substr + " " + substr.length.toString());
 
 ```
 
+# Factorial [7 kyu] #187
+
+```js
+function factorial(n) {
+  // Créer le nouveau tableau dénoté [n, n-1, n-2, ..., 1]
+const array = [];
+  if (!n) return 1;
+  else if (n < 0 || n > 12) throw new Error("RangeError"); //si n = 0
+for (let i = n; i > 1; i--) {
+    array.push(i);
+  }
+  //Utiliser reduce pour le résultat
+return array.reduce((a, n) => a * n, 1);
+}
+```
+
