@@ -2686,3 +2686,15 @@ function distinct(a) {
 }
 ```
 
+# Regex validate PIN code [7 kyu] #199
+
+```js
+function validatePIN(pin) {
+  //return true or false
+if (!pin.length === 4 && !pin.length === 6) {
+    return false;
+  }
+  return pin.match(/^\d{4}$|^\d{6}$/) !== null;
+}
+```
+
