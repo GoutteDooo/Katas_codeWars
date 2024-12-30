@@ -2668,3 +2668,13 @@ return args.reduce((a, n) => {
 }
 ```
 
+# Is it even? [8 kyu] #197
+
+```js
+export const testEven = (n : number) : boolean => {
+  // your awesome code goes here
+return n % 2 === 0;
+  
+}
+```
+
