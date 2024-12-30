@@ -2582,3 +2582,23 @@ this._rng === 0
 }
 ```
 
+# Finish Guess the Number Game [8 kyu] #192
+
+```js
+class Guesser {
+  constructor(number, lives) {
+    this.number = number;
+    this.lives = lives;
+  }
+
+  guess(n) {
+    if (this.lives <= 0) throw new Error("error already dead");
+    if (n === this.number) {
+      return true;
+    }
+    this.lives--;
+    return false;
+  }
+}
+```
+
