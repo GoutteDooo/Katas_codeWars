@@ -2602,3 +2602,18 @@ class Guesser {
 }
 ```
 
+# Regular Ball Super Ball [8 kyu] #193
+
+```js
+
+class Ball {
+  constructor(type) {
+    this.type = type ? type : "regular";
+  }
+  
+  get ballType() {
+    return this.type;
+  }
+}
+```
+
