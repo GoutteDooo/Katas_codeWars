@@ -2678,3 +2678,11 @@ return n % 2 === 0;
 }
 ```
 
+# Remove duplicates from list [8 kyu] #198
+
+```js
+function distinct(a) {
+  return a.filter((n,i,self) => self.indexOf(n) === i);
+}
+```
+
