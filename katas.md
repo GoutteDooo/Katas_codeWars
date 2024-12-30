@@ -2698,3 +2698,11 @@ if (!pin.length === 4 && !pin.length === 6) {
 }
 ```
 
+# Binary Addition [7 kyu] #200
+
+```js
+function addBinary(a,b) {
+  return (a+b).toString(2)
+}
+```
+
