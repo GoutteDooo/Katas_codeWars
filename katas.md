@@ -2529,3 +2529,12 @@ return array.reduce((a, n) => a * n, 1);
 }
 ```
 
+# Grasshopper - Array Mean [8 kyu] #188
+
+```js
+function findAverage(nums) {
+  // Code here
+return nums.reduce((a,n) => a + n,0) / nums.length;
+}
+```
+
