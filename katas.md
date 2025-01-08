@@ -2744,3 +2744,16 @@ function apple(x){
 }
 ```
 
+# Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence [8 kyu] #205
+
+```js
+function replace(s) {
+  //coding and coding....
+const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  return s
+    .split("")
+    .map((l) => (vowels.includes(l) ? "!" : l))
+    .join("");
+}
+```
+
