@@ -2768,3 +2768,20 @@ return Array(b + 1 - a)
 }
 ```
 
+# Fix string case [7 kyu] #207
+
+```js
+function solve(s){
+    //..
+return s
+    .split("")
+    .filter((l) => l === l.toUpperCase())
+    .length
+<=
+s
+    .split("")
+    .filter((l) => l === l.toLowerCase()).length ?
+s.split("").map((l) => l.toLowerCase()).join("") : s.split("").map((l) => l.toUpperCase()).join("");
+}
+```
+
