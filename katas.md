@@ -2794,3 +2794,11 @@ return animal === "alligator" ? "small" : "wide"
 }
 ```
 
+# Grasshopper - Function syntax debugging [8 kyu] #209
+
+```js
+function main (verb, noun) {
+  return verb + noun
+}
+```
+
