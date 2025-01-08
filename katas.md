@@ -2802,3 +2802,12 @@ function main (verb, noun) {
 }
 ```
 
+# Multiple of index [8 kyu] #210
+
+```js
+function multipleOfIndex(array) {
+  // good luck
+return array.filter((n,i) => n % i === 0 || n === 0)
+}
+```
+
