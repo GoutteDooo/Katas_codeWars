@@ -2736,3 +2736,11 @@ return n > m ? n % m : m % n;
 }
 ```
 
+# Alan Partridge II - Apple Turnover [8 kyu] #204
+
+```js
+function apple(x){
+  return x * x > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox.";
+}
+```
+
