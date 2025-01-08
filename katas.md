@@ -2785,3 +2785,12 @@ s.split("").map((l) => l.toLowerCase()).join("") : s.split("").map((l) => l.toUp
 }
 ```
 
+# The Wide-Mouthed frog! [8 kyu] #208
+
+```js
+function mouthSize(animal) {
+  // code here
+return animal === "alligator" ? "small" : "wide"
+}
+```
+
