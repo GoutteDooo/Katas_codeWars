@@ -2858,3 +2858,18 @@ if (n <= 0) throw new Error("n must be positive");
 }
 ```
 
+# Sum of Multiples [8 kyu] #214
+
+```js
+
+function sumMul(n, m) {
+  //your idea here
+let result = 0;
+  if (n + m <= 0) return "INVALID";
+  for (let i = n; i < m; i += n) {
+    result += i;
+  }
+  return result;
+}
+```
+
