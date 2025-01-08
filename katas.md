@@ -2829,3 +2829,32 @@ return array.sort((a,b) => a.length - b.length);
 }
 ```
 
+# Look and say sequence generator [6 kyu] #213
+
+```js
+function lookAndSaySequence(firstElement, n) {
+  //your code here
+if (n <= 0) throw new Error("n must be positive");
+  if (typeof n !== "number") throw new Error("n must be a number");
+  let str = String(firstElement);
+  for (let i = 0; i < n - 1; i++) {
+    let temp = "";
+    for (let j = 0; j < str.length; j++) {
+      if (str[j] === str[j + 1]) {
+        if (str[j + 1] === str[j + 2]) {
+          temp += "3" + str[j];
+          j += 2;
+        } else {
+          temp += "2" + str[j];
+          j++;
+        }
+      } else {
+        temp += "1" + str[j];
+      }
+    }
+    str = temp;
+  }
+  return str;
+}
+```
+
