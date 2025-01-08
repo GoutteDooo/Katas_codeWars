@@ -2757,3 +2757,14 @@ const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 }
 ```
 
+# What is between? [8 kyu] #206
+
+```js
+function between(a, b) {
+  // your code here
+return Array(b + 1 - a)
+    .fill(0)
+    .map((_, i) => i + a);
+}
+```
+
