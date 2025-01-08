@@ -2718,3 +2718,12 @@ const catYears = humanYears == 1 ? 15 : humanYears == 2 ? 24 :  24 + ((humanYear
 
 ```
 
+# Printing Array elements with Comma delimiters [8 kyu] #202
+
+```js
+function printArray(array){
+  //show me the code!
+return array.join(',')
+}
+```
+
