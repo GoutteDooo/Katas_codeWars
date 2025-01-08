@@ -2811,3 +2811,11 @@ return array.filter((n,i) => n % i === 0 || n === 0)
 }
 ```
 
+# Find numbers which are divisible by given number [8 kyu] #211
+
+```js
+function divisibleBy(numbers, divisor){
+  return numbers.filter(n => n % divisor === 0);
+}
+```
+
