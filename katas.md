@@ -2917,3 +2917,18 @@ function evenNumbers(array, number) {
 }
 ```
 
+# Meeting [6 kyu] #224
+
+```javascript
+function meeting(s) {
+  let guests = s.toUpperCase().split(";");
+  return guests
+    .map((guest) => {
+      let [lastName, firstName] = guest.split(":");
+      return `(${firstName}, ${lastName})`;
+    })
+    .sort()
+    .join("");
+}
+```
+
