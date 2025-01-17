@@ -2932,3 +2932,17 @@ function meeting(s) {
 }
 ```
 
+# The Coupon Code [7 kyu] #224
+
+```javascript
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+  console.log(new Date(currentDate).getTime());
+
+  return enteredCode === correctCode
+? new Date(currentDate).getTime() <= new Date(expirationDate).getTime()
+      ? true
+      : false
+    : false;
+}
+```
+
