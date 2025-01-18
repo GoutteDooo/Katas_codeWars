@@ -2946,3 +2946,19 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
 }
 ```
 
+# Grasshopper - Bug Squashing [8 kyu] #224
+
+```javascript
+var health = 100
+var position = 0
+var coins = 0
+function main () {
+  rollDice()
+  move()
+  combat()
+  getCoins()
+  buyHealth()
+  printStatus()
+}
+```
+
