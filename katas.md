@@ -2984,3 +2984,19 @@ class Person {
 }
 ```
 
+# Exes and Ohs [7 kyu] #224
+
+```javascript
+
+function XO(str) {
+  let Xs = 0;
+  let Os = 0;
+  for (let i = 0; i < str.length; i++) {
+    Xs = str[i] === "x" || str[i] === "X" ? Xs + 1 : Xs;
+    Os = str[i] === "o" || str[i] === "O" ? Os + 1 : Os;
+  }
+  return Xs === Os ? true : false;
+}
+
+```
+
