@@ -3011,3 +3011,20 @@ function digitize(n) {
 
 ```
 
+# Highest and Lowest [7 kyu] #225
+
+```javascript
+function highAndLow(numbers) {
+  const arrayToTest = numbers.split(" ").map(Number);
+
+  let max = arrayToTest[0];
+  let min = arrayToTest[0];
+  for (let i = 0; i < arrayToTest.length; i++) {
+    min = arrayToTest[i] < min ? arrayToTest[i] : min;
+    max = arrayToTest[i] > max ? arrayToTest[i] : max;
+  }
+
+  return `${max} ${min}`;
+}
+```
+
