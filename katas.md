@@ -3000,3 +3000,14 @@ function XO(str) {
 
 ```
 
+# Convert number to reversed array of digits [8 kyu] #224
+
+```javascript
+
+function digitize(n) {
+  const reversedArray = String(n).split("").map(Number);
+  return reversedArray.reverse();
+}
+
+```
+
