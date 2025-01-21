@@ -2890,3 +2890,19 @@ function filterWords(phrase) {
 }
 ```
 
+# Remember [6 kyu] #224
+
+```javascript
+function remember(str) {
+  const repeatedArray = [];
+  str.split("").reduce((acc, char) => {
+    acc[char] = (acc[char] || 0) + 1;
+    acc[char] > 1 && repeatedArray.push(char);
+    return acc;
+  }, {});
+  return repeatedArray.filter(
+    (char, index) => repeatedArray.indexOf(char) === index
+  );
+}
+```
+
