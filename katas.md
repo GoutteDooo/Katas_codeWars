@@ -2882,3 +2882,11 @@ return numbersArray.filter((n) => n % 2 === 0)
 }
 ```
 
+# Regex Failure - Bug Fixing #2 [7 kyu] #224
+
+```javascript
+function filterWords(phrase) {
+  return phrase.replace(/(bad|mean|ugly|horrible|hideous)/gi, "awesome");
+}
+```
+
