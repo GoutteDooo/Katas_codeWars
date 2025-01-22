@@ -3057,3 +3057,11 @@ return arr.map((n) => +(avg - n).toFixed(2));
 }
 ```
 
+# The 'if' function [8 kyu] #228
+
+```javascript
+function _if(bool, func1, func2) {
+  return bool ? func1() : func2();
+}
+```
+
