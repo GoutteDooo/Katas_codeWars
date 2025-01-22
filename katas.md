@@ -3028,3 +3028,22 @@ function highAndLow(numbers) {
 }
 ```
 
+# Strip Comments [4 kyu] #228
+
+```javascript
+function solution(text, markers) {
+  // TODO
+let lines = text.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    lines[i] = lines[i].trimEnd();
+    for (let j = 0; j < lines[i].length; j++) {
+      if (markers.includes(lines[i][j])) {
+        lines[i] = lines[i].slice(0, j).trimEnd();
+        break;
+      }
+    }
+  }
+  return lines.join("\n");
+}
+```
+
