@@ -3065,3 +3065,105 @@ function _if(bool, func1, func2) {
 }
 ```
 
+# Make a spiral [3 kyu] #229
+
+```javascript
+function spiralize(n) {
+  function changeDirection(snakeDir) {
+    if (snakeDir[0] === 1) {
+      snakeDir = [0, 1];
+    } else if (snakeDir[1] === 1) {
+      snakeDir = [-1, 0];
+    } else if (snakeDir[0] === -1) {
+      snakeDir = [0, -1];
+    } else {
+      snakeDir = [1, 0];
+    }
+    return snakeDir;
+  }
+  function checkAdjacent(snakeDir, nextSnakePos, map) {
+    const n = map.length; // Taille de la grille
+// Helper pour vérifier si une position est dans les limites
+function isValid(pos) {
+      return pos[0] >= 0 && pos[0] < n && pos[1] >= 0 && pos[1] < n;
+    }
+
+    // Vérifie les cases adjacentes selon la direction actuelle
+if (
+      snakeDir[0] === 1 && // Direction droite
+      (!isValid([nextSnakePos[0], nextSnakePos[1]]) ||
+map[nextSnakePos[0] + 1]?.[nextSnakePos[1]] === 1 ||
+map[nextSnakePos[0]]?.[nextSnakePos[1] + 1] === 1)
+    )
+      return false;
+
+    if (
+      snakeDir[1] === 1 && // Direction bas
+      (!isValid([nextSnakePos[0], nextSnakePos[1]]) ||
+map[nextSnakePos[0] + 1]?.[nextSnakePos[1]] === 1 ||
+map[nextSnakePos[0]]?.[nextSnakePos[1] - 1] === 1)
+    ) {
+      return false;
+    }
+    if (
+      snakeDir[0] === -1 && // Direction gauche
+      (!isValid([nextSnakePos[0], nextSnakePos[1]]) ||
+map[nextSnakePos[1]]?.[nextSnakePos[0] - 1] === 1 ||
+map[nextSnakePos[1] - 1]?.[nextSnakePos[0]] === 1)
+    ) {
+      return false;
+    }
+    if (
+      snakeDir[1] === -1 && // Direction haut
+      (!isValid([nextSnakePos[0], nextSnakePos[1]]) ||
+map[nextSnakePos[1]]?.[nextSnakePos[0] + 1] === 1 ||
+map[nextSnakePos[1] - 1]?.[nextSnakePos[0]] === 1)
+    ) {
+
+      return false;
+    }
+    // Tout est valide, le serpent peut avancer
+return true;
+  }
+
+  let map = [];
+  for (let i = 0; i < n; i++) {
+    map.push(Array.from({ length: n }, () => 0));
+  }
+  /* Map vide générée */
+let directionsLeft = 2;
+  let snakePos = [0, 0];
+  let snakeDir = [1, 0];
+  let perimetre = map[0].length;
+  map[snakePos[0]][snakePos[1]] = 1;
+  while (directionsLeft > 0) {
+    let nextSnakePos = [snakePos[0] + snakeDir[0], snakePos[1] + snakeDir[1]];
+
+    //Vérifications si la nextPos tape un bord
+if (
+      nextSnakePos[0] >= perimetre ||
+nextSnakePos[0] < 0 ||
+nextSnakePos[1] >= perimetre
+    ) {
+      snakeDir = changeDirection(snakeDir);
+      directionsLeft--;
+      continue;
+    }
+    //Si on arrive ici, on est dans la périmètre, on va ensuite vérifier qu'il n'y a pas une queue de serpent aux cases adjacentes à la nextPos
+//Vérifie si queue aux cases adj à la case n
+if (checkAdjacent(snakeDir, nextSnakePos, map)) {
+
+      //Modifier la case actuelle à "1"
+snakePos = nextSnakePos;
+      map[snakePos[1]][snakePos[0]] = 1;
+      directionsLeft = 2;
+    } else {
+      snakeDir = changeDirection(snakeDir);
+      directionsLeft--;
+    }
+  }
+
+  return map;
+}
+```
+
