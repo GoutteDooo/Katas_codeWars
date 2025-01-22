@@ -3047,3 +3047,13 @@ let lines = text.split("\n");
 }
 ```
 
+# Distance from the average [7 kyu] #228
+
+```javascript
+function distancesFromAverage(arr) {
+  const avg = arr.reduce((a, b) => a + b) / arr.length;
+  //your code here
+return arr.map((n) => +(avg - n).toFixed(2));
+}
+```
+
