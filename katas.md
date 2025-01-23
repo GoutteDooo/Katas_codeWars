@@ -3202,3 +3202,11 @@ return arr.includes(item)
 }
 ```
 
+# Exclamation marks series #2: Remove all exclamation marks from the end of sentence [8 kyu] #233
+
+```javascript
+function remove(string) {
+  return string.replace(/!+$/, "");
+}
+```
+
