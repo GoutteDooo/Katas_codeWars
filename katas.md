@@ -3167,3 +3167,19 @@ snakePos = nextSnakePos;
 }
 ```
 
+# Sum of array singles [7 kyu] #230
+
+```javascript
+function repeats(arr) {
+  return Object.entries(
+    arr.reduce((a, n) => {
+      a[n] = a[n] ? a[n] + 1 : 1;
+      return a;
+    }, {})
+  )
+    .filter(([k, v]) => v === 1)
+    .map(([k, v]) => Number(k))
+    .reduce((a, n) => a + n);
+}
+```
+
