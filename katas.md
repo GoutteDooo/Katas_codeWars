@@ -3193,3 +3193,12 @@ function animal(obj){
 
 ```
 
+# Enumerable Magic - Does My List Include This? [8 kyu] #232
+
+```javascript
+function include(arr, item){
+  // ...
+return arr.includes(item)
+}
+```
+
