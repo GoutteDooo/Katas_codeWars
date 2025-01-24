@@ -3218,3 +3218,13 @@ def create_phone_number(arr):
 return f"({arr[0]}{arr[1]}{arr[2]}) {arr[3]}{arr[4]}{arr[5]}-{arr[6]}{arr[7]}{arr[8]}{arr[9]}"
 ```
 
+# Did she say hallo? [8 kyu] #235
+
+```python
+def validate_hello(greetings):
+    valid_greetings = ["hallo", "hello", "salut", "hola", "ahoj", "czesc","ciao"]
+    # Le générateur teste si chaque élément de valid_greetings est dans greetings
+greetings = greetings.lower()
+    return any(greeting in greetings for greeting in valid_greetings)
+```
+
