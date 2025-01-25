@@ -3240,3 +3240,11 @@ return number
 print(lowercase_count("abcABC123"))
 ```
 
+# Remove First and Last Character Part Two [8 kyu] #237
+
+```python
+def array(string):
+    ret_str = " ".join(string.split(",")[1:-1])
+    return ret_str if ret_str else None
+```
+
