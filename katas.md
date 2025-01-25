@@ -3228,3 +3228,15 @@ greetings = greetings.lower()
     return any(greeting in greetings for greeting in valid_greetings)
 ```
 
+# Regex count lowercase letters [8 kyu] #236
+
+```python
+def lowercase_count(strng):
+    number = 0
+for char in strng:
+        if char.islower():
+            number += 1
+return number
+print(lowercase_count("abcABC123"))
+```
+
