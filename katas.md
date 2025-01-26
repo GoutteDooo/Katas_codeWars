@@ -3285,3 +3285,15 @@ print(new_shark_speed)
 
 ```
 
+# OOP: Object Oriented Piracy [8 kyu] #242
+
+```python
+class Ship:
+    def __init__(self, draft, crew):
+        self.draft = draft
+self.crew = crew
+# Your code here
+def is_worth_it(self):
+        return self.draft - 1.5 * self.crew > 20
+```
+
