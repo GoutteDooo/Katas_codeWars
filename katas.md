@@ -3312,3 +3312,17 @@ def cube_checker(volume, side):
     return True if volume == side**3 and side > 0 else False
 ```
 
+# Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right [8 kyu] #245
+
+```python
+def remove(st, n):
+    new_str = ""
+marks_to_remove = n
+for i in range(len(st)):
+        if st[i] == "!" and marks_to_remove > 0:
+            marks_to_remove -= 1
+else:
+            new_str += st[i]
+    return new_str
+```
+
