@@ -3297,3 +3297,11 @@ def is_worth_it(self):
         return self.draft - 1.5 * self.crew > 20
 ```
 
+# Welcome to the City [8 kyu] #243
+
+```python
+def say_hello(name, city, state):
+    #your code here
+return (f'Hello, {" ".join(name)}! Welcome to {city}, {state}!')
+```
+
