@@ -3260,3 +3260,11 @@ for i in range(len(arr)-1):
     return None
 ```
 
+# Price of Mangoes [8 kyu] #239
+
+```python
+import math
+def mango(quantity, price):
+    return (quantity - math.floor(quantity / 3)) * price
+```
+
