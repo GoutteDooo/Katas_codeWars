@@ -3275,3 +3275,13 @@ def who_is_paying(name):
     return [name,name[0]+name[1]] if len(name) > 2 else [name]
 ```
 
+# Holiday VI - Shark Pontoon [8 kyu] #241
+
+```python
+def shark(pontoon_distance, shark_distance, you_speed, shark_speed, dolphin):
+    new_shark_speed = shark_speed * 0.5 if dolphin else shark_speed
+print(new_shark_speed)
+    return 'Alive!' if shark_distance / new_shark_speed - pontoon_distance / you_speed > 0 else 'Shark Bait!'
+
+```
+
