@@ -3305,3 +3305,10 @@ def say_hello(name, city, state):
 return (f'Hello, {" ".join(name)}! Welcome to {city}, {state}!')
 ```
 
+# Find out whether the shape is a cube [8 kyu] #244
+
+```python
+def cube_checker(volume, side):
+    return True if volume == side**3 and side > 0 else False
+```
+
