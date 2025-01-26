@@ -3268,3 +3268,10 @@ def mango(quantity, price):
     return (quantity - math.floor(quantity / 3)) * price
 ```
 
+# Who is going to pay for the wall? [8 kyu] #240
+
+```python
+def who_is_paying(name):
+    return [name,name[0]+name[1]] if len(name) > 2 else [name]
+```
+
