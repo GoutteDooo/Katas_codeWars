@@ -3248,3 +3248,15 @@ def array(string):
     return ret_str if ret_str else None
 ```
 
+# Find the first non-consecutive number [8 kyu] #238
+
+```python
+def first_non_consecutive(arr):
+    if not(len(arr)) or len(arr) == 1:
+        return None
+for i in range(len(arr)-1):
+        if (arr[i] != arr[i+1] - 1):
+            return arr[i+1]
+    return None
+```
+
