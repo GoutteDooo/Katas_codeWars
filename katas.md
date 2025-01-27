@@ -3326,3 +3326,18 @@ else:
     return new_str
 ```
 
+# Do you speak "English"? [8 kyu] #246
+
+```python
+def sp_eng(sentence): 
+    # your code here
+new_sentence = sentence.lower()
+    if len(new_sentence) < len("english"):
+        return False
+for i in range(len(new_sentence) - len("english")+1):
+        print("joue")
+        if new_sentence[i:i+len("english")] == "english":
+            return True
+return False
+```
+
