@@ -3397,3 +3397,11 @@ def subt(a, b):
     return a - b
 ```
 
+# No oddities here [7 kyu] #252
+
+```python
+def no_odds(values):
+    # Return list of only even values
+return [x for x in values if x % 2 == 0]
+```
+
