@@ -3405,3 +3405,19 @@ def no_odds(values):
 return [x for x in values if x % 2 == 0]
 ```
 
+# Money, Money, Money [7 kyu] #253
+
+```python
+def calculate_years(principal, interest, tax, desired):
+    new_interest = principal
+year = 0
+while (new_interest < desired):
+        interest_to_be_taxed = (new_interest * (1 + interest) - new_interest) * (1 - tax)
+        new_interest += interest_to_be_taxed
+year += 1
+print("year ", year, ": ", new_interest)
+        if year > 10000:
+            break
+return year
+```
+
