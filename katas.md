@@ -3359,3 +3359,12 @@ def combine_names(first,last):
     return first + " " + last
 ```
 
+# Find Nearest square number [8 kyu] #249
+
+```python
+import math
+def nearest_sq(n):
+    return round(math.sqrt(n)) ** 2
+
+```
+
