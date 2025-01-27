@@ -3428,3 +3428,11 @@ def contamination(text, char):
     return "".join(char for l in text)
 ```
 
+# Simple validation of a username with regex [8 kyu] #255
+
+```python
+import re
+def validate_usr(username):
+    return re.fullmatch("[a-z0-9_]{4,16}", username) is not None
+```
+
