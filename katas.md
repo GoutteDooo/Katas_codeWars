@@ -3351,3 +3351,11 @@ area = (2*w*h)+(2*w*d)+(2*h*d)
 return [area, volume]
 ```
 
+# Grasshopper - Combine strings [8 kyu] #248
+
+```python
+# Create the combine_names function here
+def combine_names(first,last):
+    return first + " " + last
+```
+
