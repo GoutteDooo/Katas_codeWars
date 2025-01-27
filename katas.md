@@ -3341,3 +3341,13 @@ for i in range(len(new_sentence) - len("english")+1):
 return False
 ```
 
+# Surface Area and Volume of a Box [8 kyu] #247
+
+```python
+def get_size(w,h,d):
+    #your code here
+area = (2*w*h)+(2*w*d)+(2*h*d)
+    volume = w*h*d
+return [area, volume]
+```
+
