@@ -3368,3 +3368,15 @@ def nearest_sq(n):
 
 ```
 
+# Pillars [8 kyu] #250
+
+```python
+def pillars(num_pill, dist, width):
+    if num_pill == 1:
+        return 0
+if num_pill == 2:
+        return (dist*100) * (num_pill-1)
+    return (dist*100) * (num_pill-1) + width * (num_pill-2)
+
+```
+
