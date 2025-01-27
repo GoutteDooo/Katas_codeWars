@@ -3421,3 +3421,10 @@ print("year ", year, ": ", new_interest)
 return year
 ```
 
+# Contamination #1 -String- [8 kyu] #254
+
+```python
+def contamination(text, char):
+    return "".join(char for l in text)
+```
+
