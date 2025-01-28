@@ -3449,3 +3449,17 @@ elif exam > 50 and projects >= 2:
 return 0# final grade
 ```
 
+# Define a card suit [8 kyu] #257
+
+```python
+def define_suit(card):
+    families = {
+        "H": "Hearts",
+        "D": "Diamonds",
+        "C": "Clubs",
+        "S": "Spades",
+    }
+    return families[card[len(card)-1]].lower()
+
+```
+
