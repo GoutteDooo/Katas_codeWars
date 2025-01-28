@@ -3463,3 +3463,15 @@ def define_suit(card):
 
 ```
 
+# Predict your age! [7 kyu] #258
+
+```python
+from functools import reduce
+from math import sqrt,floor
+def predict_age(age_1, age_2, age_3, age_4, age_5, age_6, age_7, age_8):
+    # your code
+arr = [age_1, age_2, age_3, age_4, age_5, age_6, age_7, age_8]
+    return floor(sqrt(reduce(lambda x,y: x + y, list(map(lambda x : x*x, arr))))/2)
+
+```
+
