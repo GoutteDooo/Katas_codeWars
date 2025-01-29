@@ -3494,3 +3494,10 @@ websites = ["codewars" for i in range(1000)]
 
 ```
 
+# How many lightsabers do you own? [8 kyu] #261
+
+```python
+def how_many_light_sabers_do_you_own(name = None):
+    return 18 if name == "Zach" else 0
+```
+
