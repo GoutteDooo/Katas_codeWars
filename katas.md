@@ -3487,3 +3487,10 @@ day_count += 1
 return day_count
 ```
 
+# Kata Example Twist [8 kyu] #260
+
+```python
+websites = ["codewars" for i in range(1000)]
+
+```
+
