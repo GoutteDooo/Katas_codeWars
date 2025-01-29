@@ -3475,3 +3475,15 @@ arr = [age_1, age_2, age_3, age_4, age_5, age_6, age_7, age_8]
 
 ```
 
+# Deodorant Evaporator [7 kyu] #259
+
+```python
+def evaporator(content, evap_per_day, threshold):
+    day_count = 0
+threshold = (threshold/100) * content
+while (content >= threshold):
+        content -= (evap_per_day/100) * content
+day_count += 1
+return day_count
+```
+
