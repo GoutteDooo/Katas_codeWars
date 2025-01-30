@@ -3538,3 +3538,11 @@ def is_palindrome(s):
 
 ```
 
+# No Loops 2 - You only need one [8 kyu] #267
+
+```python
+def check(a, x): 
+    # your code here
+return x in a
+```
+
