@@ -3501,3 +3501,10 @@ def how_many_light_sabers_do_you_own(name = None):
     return 18 if name == "Zach" else 0
 ```
 
+# Count Odd Numbers below n [8 kyu] #262
+
+```python
+def odd_count(n):
+    return (n//2)
+```
+
