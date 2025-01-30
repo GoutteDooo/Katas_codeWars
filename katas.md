@@ -3569,3 +3569,35 @@ return "yes, ascending" if is_ascending else "yes, descending"
 
 ```
 
+# Alphabet war [7 kyu] #270
+
+```python
+def alphabet_war(fight):
+    #your code here
+left_powers = {
+        "w":4,
+        "p":3,
+        "b":2,
+        "s":1,
+    }
+    right_powers = {
+        "m":4,
+        "q":3,
+        "d":2,
+        "z":1,
+    }
+    right_points = 0
+left_points = 0
+for letter in fight:
+        if letter in left_powers:
+            left_points += left_powers[letter]
+        if letter in right_powers:
+            right_points += right_powers[letter]
+    if left_points > right_points:
+        return "Left side wins!"
+elif left_points < right_points:
+        return "Right side wins!"
+else:
+        return "Let's fight again!"
+```
+
