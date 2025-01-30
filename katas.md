@@ -3530,3 +3530,11 @@ def multiply(n):
 
 ```
 
+# Is it a palindrome? [8 kyu] #266
+
+```python
+def is_palindrome(s):
+    return s.lower() == s[::-1].lower()
+
+```
+
