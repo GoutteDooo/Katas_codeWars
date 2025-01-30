@@ -3522,3 +3522,11 @@ def set_alarm(employed, vacation):
     return employed and not vacation
 ```
 
+# Multiply the number [8 kyu] #265
+
+```python
+def multiply(n):
+    return n*5**len(str(abs(n)))
+
+```
+
