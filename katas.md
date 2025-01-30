@@ -3554,3 +3554,18 @@ def find_short(s):
 
 ```
 
+# Sorted? yes? no? how? [7 kyu] #269
+
+```python
+
+def is_sorted_and_how(arr):
+    is_ascending = arr[0] < arr[1]
+    for i in range(len(arr)-1):
+        last_state = is_ascending
+is_ascending = arr[i] < arr[i+1]
+        if last_state != is_ascending:
+            return "no"
+return "yes, ascending" if is_ascending else "yes, descending"
+
+```
+
