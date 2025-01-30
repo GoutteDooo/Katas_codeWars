@@ -3546,3 +3546,11 @@ def check(a, x):
 return x in a
 ```
 
+# Shortest Word [7 kyu] #268
+
+```python
+def find_short(s):
+    return min(len(word) for word in s.split())
+
+```
+
