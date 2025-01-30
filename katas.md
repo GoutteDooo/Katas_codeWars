@@ -3508,3 +3508,10 @@ def odd_count(n):
     return (n//2)
 ```
 
+# Formatting decimal places #0 [8 kyu] #263
+
+```python
+def two_decimal_places(n):
+    return round(n, 2)
+```
+
