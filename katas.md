@@ -3515,3 +3515,10 @@ def two_decimal_places(n):
     return round(n, 2)
 ```
 
+# L1: Set Alarm [8 kyu] #264
+
+```python
+def set_alarm(employed, vacation):
+    return employed and not vacation
+```
+
