@@ -3601,3 +3601,12 @@ else:
         return "Let's fight again!"
 ```
 
+# Love vs friendship [7 kyu] #271
+
+```python
+def words_to_marks(s):
+    powers = "abcdefghijklmnopqrstuvwxyz"
+return sum(1 + powers.find(c) for c in s if powers.find(c) != -1)
+
+```
+
