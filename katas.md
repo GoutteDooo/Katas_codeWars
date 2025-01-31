@@ -3610,3 +3610,11 @@ return sum(1 + powers.find(c) for c in s if powers.find(c) != -1)
 
 ```
 
+# Double Char [8 kyu] #272
+
+```python
+def double_char(s):
+    return "".join(c+c for c in s)
+
+```
+
