@@ -3618,3 +3618,12 @@ def double_char(s):
 
 ```
 
+# Take the Derivative [8 kyu] #273
+
+```python
+def derive(coefficient, exponent): 
+    # your code here
+return f"{coefficient * exponent}x^{exponent-1}"
+
+```
+
