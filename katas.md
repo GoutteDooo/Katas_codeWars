@@ -3739,3 +3739,13 @@ def stairs_in_20(stairs):
 
 ```
 
+# Largest pair sum in array [7 kyu] #282
+
+```python
+def largest_pair_sum(numbers): 
+    # your code here
+numbers.sort()
+    reversed_numbers = list(reversed(numbers))
+    return reversed_numbers[0] + reversed_numbers[1]
+```
+
