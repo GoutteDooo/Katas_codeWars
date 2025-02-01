@@ -3731,3 +3731,11 @@ def is_valid_walk(walk):
 return walk.count("n") - walk.count("s") == 0 and walk.count("e") - walk.count("w") == 0 and len(walk) == 10
 ```
 
+# How many stairs will Suzuki climb in 20 years? [8 kyu] #281
+
+```python
+def stairs_in_20(stairs):
+    return 20 * sum(sum(stairs[i][j] for j in range(len(stairs[i]))) for i in range (len(stairs)))
+
+```
+
