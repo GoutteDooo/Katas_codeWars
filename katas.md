@@ -3705,3 +3705,21 @@ elif x == 1:
 return power_of_two(x//2)
 ```
 
+# Check same case [8 kyu] #279
+
+```python
+def same_case(a, b): 
+    ranges = {
+        "A-Z": range(65, 91),  # Les lettres majuscules (A-Z) : 65 à 90 inclus
+"a-z": range(97, 123), # Les lettres minuscules (a-z) : 97 à 122 inclus
+    }
+    print(ord(a) in ranges["a-z"], ord(b) in ranges["a-z"])
+    # your code here
+if ord(a) in ranges["a-z"] and ord(b) in ranges["a-z"] or ord(a) in ranges["A-Z"] and ord(b) in ranges["A-Z"]:
+        return 1
+elif ord(a) in ranges["a-z"] and ord(b) in ranges["A-Z"] or ord(a) in ranges["A-Z"] and ord(b) in ranges["a-z"]:
+        return 0
+else:
+        return -1
+```
+
