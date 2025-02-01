@@ -3659,3 +3659,20 @@ def decode(st):
     return "".join([decoding_data[d] if d in decoding_data else d for d in st])
 ```
 
+# Help the bookseller ! [6 kyu] #276
+
+```python
+def stock_list(stocklist, categories):
+    # your code here
+if stocklist == [] or categories == []:
+        return ""
+dict_stock = {category:0 for category in categories}
+    for stock in stocklist:
+        print(dict_stock)
+        if stock[0] in categories:
+            if stock[0] not in dict_stock:
+                dict_stock[stock[0]] = 0
+dict_stock[stock[0]] += int(stock.split(" ")[1])
+    return " - ".join(f"({stock} : {dict_stock[stock]})" for stock in dict_stock)
+```
+
