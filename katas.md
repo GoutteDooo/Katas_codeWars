@@ -3723,3 +3723,11 @@ else:
         return -1
 ```
 
+# Take a Ten Minutes Walk [6 kyu] #280
+
+```python
+def is_valid_walk(walk):
+    #determine if walk is valid
+return walk.count("n") - walk.count("s") == 0 and walk.count("e") - walk.count("w") == 0 and len(walk) == 10
+```
+
