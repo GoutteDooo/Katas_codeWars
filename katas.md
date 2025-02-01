@@ -3691,3 +3691,17 @@ def data_reverse(data):
     return [item for sublist in reversed_list for item in sublist]
 ```
 
+# Power of two [7 kyu] #278
+
+```python
+def power_of_two(x):
+    # your code here
+if x % 2 != 0 and x > 1:
+        return False
+elif x < 1:
+        return False
+elif x == 1:
+        return True
+return power_of_two(x//2)
+```
+
