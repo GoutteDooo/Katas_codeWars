@@ -3635,3 +3635,27 @@ def greet(name):
 return f"Hello {name[0].upper()}{name[1:].lower()}!"
 ```
 
+# The Vowel Code [6 kyu] #275
+
+```python
+encoding_data = {
+    "a": 1,
+    "e": 2,
+    "i": 3,
+    "o": 4,
+    "u": 5,
+}
+decoding_data = {
+    "1": "a",
+    "2": "e",
+    "3": "i",
+    "4": "o",
+    "5": "u",
+}
+def encode(st):
+    return "".join([str(encoding_data[c]) if c in encoding_data else c for c in st])
+    
+def decode(st):
+    return "".join([decoding_data[d] if d in decoding_data else d for d in st])
+```
+
