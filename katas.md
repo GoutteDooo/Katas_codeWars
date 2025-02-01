@@ -3627,3 +3627,11 @@ return f"{coefficient * exponent}x^{exponent-1}"
 
 ```
 
+# Greet Me [7 kyu] #274
+
+```python
+def greet(name): 
+    # your code here
+return f"Hello {name[0].upper()}{name[1:].lower()}!"
+```
+
