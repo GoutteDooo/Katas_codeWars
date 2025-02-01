@@ -3676,3 +3676,18 @@ dict_stock[stock[0]] += int(stock.split(" ")[1])
     return " - ".join(f"({stock} : {dict_stock[stock]})" for stock in dict_stock)
 ```
 
+# Data Reverse [6 kyu] #277
+
+```python
+def data_reverse(data):
+    new_data = []
+    for i in range(len(data)//8):
+        sub_data = []
+        for j in range(8):
+            sub_data.append(data[i*8+j])
+        new_data.append(sub_data)
+    reversed_list = list(reversed(new_data))
+    print(["".join(map(str, sublist)) for sublist in reversed_list])
+    return [item for sublist in reversed_list for item in sublist]
+```
+
