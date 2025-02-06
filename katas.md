@@ -3764,3 +3764,17 @@ def God():
     return [Man(), Woman()]
 ```
 
+# Who ate the cookie? [8 kyu] #284
+
+```python
+def cookie(x):
+    who = None
+if type(x) is str:
+        who = "Zach"
+elif type(x) is int or type(x) is float:
+        who = "Monica"
+else:
+        who = "the dog"
+return f"Who ate the last cookie? It was {who}!"
+```
+
