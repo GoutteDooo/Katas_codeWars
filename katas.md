@@ -3802,3 +3802,11 @@ def string_clean(s):
 return "".join(c for c in s if not c.isdecimal())
 ```
 
+# Build a square [7 kyu] #288
+
+```python
+def generate_shape(n):
+    return "\n".join("".join("+" for i in range(n)) for i in range(n))
+
+```
+
