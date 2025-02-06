@@ -3785,3 +3785,10 @@ def filter_string(st):
     return int("".join(c for c in st if c.isnumeric()))
 ```
 
+# Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string [8 kyu] #286
+
+```python
+def remove(st):
+    return "".join(c for c in st if c not in "!") + "!"
+```
+
