@@ -3778,3 +3778,10 @@ else:
 return f"Who ate the last cookie? It was {who}!"
 ```
 
+# Filter the number [7 kyu] #285
+
+```python
+def filter_string(st):
+    return int("".join(c for c in st if c.isnumeric()))
+```
+
