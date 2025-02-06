@@ -3792,3 +3792,13 @@ def remove(st):
     return "".join(c for c in st if c not in "!") + "!"
 ```
 
+# String cleaning [8 kyu] #287
+
+```python
+def string_clean(s):
+    """
+    Function will return the cleaned string
+    """
+return "".join(c for c in s if not c.isdecimal())
+```
+
