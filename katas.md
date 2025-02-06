@@ -3749,3 +3749,18 @@ numbers.sort()
     return reversed_numbers[0] + reversed_numbers[1]
 ```
 
+# Basic subclasses - Adam and Eve [8 kyu] #283
+
+```python
+
+#code
+class Human:
+    pass
+class Man(Human):
+    pass
+class Woman(Human):
+    pass
+def God():
+    return [Man(), Woman()]
+```
+
