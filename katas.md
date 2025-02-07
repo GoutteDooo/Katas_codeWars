@@ -3847,3 +3847,18 @@ def count_red_beads(n):
 
 ```
 
+# Alphabet symmetry [7 kyu] #293
+
+```python
+def solve(strings : list[str]) -> list[int]:
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+return_arr = []
+    # return "D" in alphabet
+# return strings[1]
+for i in range(len(strings)):
+        actual_count = len([pos for pos, l in enumerate(strings[i].lower()) if l in alphabet and pos == alphabet.index(l)])
+        # actual_count = len([alphabet.index(l)+1 for l in strings[i].lower() if l in alphabet and strings[i].lower().index(l) == alphabet.index(l)])
+return_arr.append(actual_count) 
+    return return_arr
+```
+
