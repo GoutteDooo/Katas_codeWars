@@ -3839,3 +3839,11 @@ content += sub_content
 return content
 ```
 
+# Simple beads count [7 kyu] #292
+
+```python
+def count_red_beads(n):
+    return (n-1)*2
+
+```
+
