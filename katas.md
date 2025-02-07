@@ -3862,3 +3862,14 @@ return_arr.append(actual_count)
     return return_arr
 ```
 
+# Is it a number? [8 kyu] #294
+
+```python
+def is_digit(s):
+    try:
+        float(s.strip()).is_integer or int(s.strip()).is_integer
+return True
+except ValueError:
+        return False
+```
+
