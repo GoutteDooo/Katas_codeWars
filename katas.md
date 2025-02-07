@@ -3823,3 +3823,19 @@ def shorten_to_date(long_date):
 odds = lambda array: [n for n in array if n%2]
 ```
 
+# CSV representation of array [8 kyu] #291
+
+```python
+def to_csv_text(array):
+    content = ""
+for i in range(len(array)):
+        sub_content = ""
+for j in range(len(array[i])):
+            if i == len(array) - 1 and j == len(array[i]) - 1:
+                sub_content += str(array[i][j])
+            else:
+                sub_content += str(array[i][j]) + "," if j < len(array[i]) - 1 else str(array[i][j]) + "\n"
+content += sub_content
+return content
+```
+
