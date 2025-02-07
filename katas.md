@@ -3817,3 +3817,9 @@ def shorten_to_date(long_date):
     return " ".join(w for w in long_date.replace(",","").split()[:-1])
 ```
 
+# Are arrow functions odd? [8 kyu] #290
+
+```python
+odds = lambda array: [n for n in array if n%2]
+```
+
