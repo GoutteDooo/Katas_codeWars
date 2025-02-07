@@ -3810,3 +3810,10 @@ def generate_shape(n):
 
 ```
 
+# Remove the time [8 kyu] #289
+
+```python
+def shorten_to_date(long_date):
+    return " ".join(w for w in long_date.replace(",","").split()[:-1])
+```
+
