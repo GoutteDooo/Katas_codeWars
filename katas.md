@@ -3908,3 +3908,19 @@ return strng + " = " + str(calc)
 
 ```
 
+# Count the divisors of a number [7 kyu] #297
+
+```python
+def divisors(n):
+    if n == 1 or n == 0:
+        return 1
+elif n < 0:
+        return False
+diviseurs = 2 #parce qu'il y'a tjr 2 diviseurs par défaut si n > 1
+for i in range(2, int(n/2)+1):
+        if n % i == 0:
+            diviseurs += 1
+return diviseurs
+
+```
+
