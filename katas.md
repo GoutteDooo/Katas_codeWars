@@ -3889,3 +3889,22 @@ elif op == "/":
 return "unknown value"
 ```
 
+# Sum of numbers from 0 to N [7 kyu] #296
+
+```python
+def show_sequence(n):
+    if n < 0:
+        return f"{n}<0"
+elif n == 0:
+        return "0=0"
+calc = 0
+strng = ""
+for i in range(n+1):
+        calc += i
+strng += str(i)
+        if i < n :
+            strng += "+"
+return strng + " = " + str(calc)
+
+```
+
