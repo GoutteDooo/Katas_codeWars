@@ -3873,3 +3873,19 @@ except ValueError:
         return False
 ```
 
+# simple calculator [8 kyu] #295
+
+```python
+def calculator(x,y,op):
+    if type(x) is int and type(y) is int:
+        if op == "+":
+            return x + y
+elif op == "-":
+            return x - y
+elif op == "*":
+            return x * y
+elif op == "/":
+            return x / y
+return "unknown value"
+```
+
