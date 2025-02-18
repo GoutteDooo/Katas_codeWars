@@ -3924,3 +3924,27 @@ return diviseurs
 
 ```
 
+# Consonant value [6 kyu] #298
+
+```python
+def solve(s):
+    if type(s) is not str:
+        return False
+test_array = []
+    testing_str = ""
+for i in range(len(s)):
+        if s[i] in "aeiou":
+            test_array.append(testing_str)
+            testing_str = ""
+continue
+if i == len(s) - 1 and testing_str != "":
+            testing_str += s[i]
+            test_array.append(testing_str)
+            break
+testing_str += s[i]
+    converted_array=[]
+    for sstr in test_array:
+        converted_array.append(sum([ord(j)-96 for j in sstr]))
+    return max(converted_array)
+```
+
