@@ -3948,3 +3948,20 @@ testing_str += s[i]
     return max(converted_array)
 ```
 
+# Speed Control [7 kyu] #299
+
+```python
+import math
+def gps(s, x):
+    hourly = 3600 / s # =240
+avg_speed = []
+    #ajouter chaque sous-array dans un nouveau tableau et calculer la vitesse moyenne
+for i in range(len(x)-1):
+        avg = (x[i+1] - x[i]) * hourly
+avg_speed.append(avg)
+    if avg_speed == []:
+        return 0
+#retourner la vitesse max trouvée
+return math.floor(max(avg_speed))
+```
+
