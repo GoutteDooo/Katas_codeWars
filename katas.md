@@ -3988,3 +3988,10 @@ for operand in operands:
     return max
 ```
 
+# ASCII Total [8 kyu] #302
+
+```python
+def uni_total(s):
+    return sum(ord(c) for c in s)
+```
+
