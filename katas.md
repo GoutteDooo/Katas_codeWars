@@ -3976,3 +3976,15 @@ def reverse(lst):
 
 ```
 
+# Expressions Matter [8 kyu] #301
+
+```python
+def expression_matter(a, b, c):
+    operands = [a+b*c,a*b+c,a*(b+c),(a+b)*c,(a+b+c),a*b*c]
+    max = 0
+for operand in operands:
+        if int(operand) > max:
+            max = int(operand)
+    return max
+```
+
