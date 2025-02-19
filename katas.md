@@ -3995,3 +3995,11 @@ def uni_total(s):
     return sum(ord(c) for c in s)
 ```
 
+# Find the vowels [7 kyu] #303
+
+```python
+def vowel_indices(word):
+	# your code here
+return [index+1 for index, char in enumerate(word) if char.lower() in "aeiouy"]
+```
+
