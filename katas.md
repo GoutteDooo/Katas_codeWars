@@ -3965,3 +3965,14 @@ avg_speed.append(avg)
 return math.floor(max(avg_speed))
 ```
 
+# esreveR [7 kyu] #300
+
+```python
+def reverse(lst):
+    empty_list = list()
+    for i in range(len(lst)-1,-1,-1):
+        empty_list.append(lst[i])
+    return empty_list
+
+```
+
