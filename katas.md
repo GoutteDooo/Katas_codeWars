@@ -4019,3 +4019,15 @@ def solve(arr):
     return [n for i,n in enumerate(arr) if i == len(arr) - 1 - arr[::-1].index(n)]
 ```
 
+# validate code with simple regex [8 kyu] #306
+
+```python
+import re
+def validate_code(code):
+    #your code here
+if re.match(r'^[-+]?[123]', str(code)):
+        return True
+else:
+        return False
+```
+
