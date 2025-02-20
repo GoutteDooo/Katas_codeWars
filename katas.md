@@ -4012,3 +4012,10 @@ def _all(seq, fun):
 
 ```
 
+# Simple remove duplicates [7 kyu] #305
+
+```python
+def solve(arr): 
+    return [n for i,n in enumerate(arr) if i == len(arr) - 1 - arr[::-1].index(n)]
+```
+
