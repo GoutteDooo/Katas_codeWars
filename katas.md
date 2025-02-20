@@ -4054,3 +4054,13 @@ else:
 
 ```
 
+# Divide and Conquer [7 kyu] #309
+
+```python
+def div_con(x):
+    # your code here
+new_x = [-int(n) for n in x if type(n) is str]
+    new_x.extend(n for n in x if type(n) is int)
+    return sum(new_x)
+```
+
