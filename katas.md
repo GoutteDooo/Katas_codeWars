@@ -4042,3 +4042,15 @@ for i in range(1,p+1):
 return po_number
 ```
 
+# Sleigh Authentication [8 kyu] #308
+
+```python
+class Sleigh(object):
+    def authenticate(self, name, password):
+        if name == "Santa Claus" and password == "Ho Ho Ho!":
+            return True
+else:
+            return False
+
+```
+
