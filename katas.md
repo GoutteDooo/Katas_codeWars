@@ -4003,3 +4003,12 @@ def vowel_indices(word):
 return [index+1 for index, char in enumerate(word) if char.lower() in "aeiouy"]
 ```
 
+# Enumerable Magic #1 - True for All? [8 kyu] #304
+
+```python
+
+def _all(seq, fun): 
+    return all(fun(x) for x in seq)
+
+```
+
