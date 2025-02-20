@@ -4031,3 +4031,14 @@ else:
         return False
 ```
 
+# Power [8 kyu] #307
+
+```python
+def number_to_pwr(number, p): 
+    # your code here
+po_number = 1
+for i in range(1,p+1):
+        po_number *= number
+return po_number
+```
+
