@@ -4076,3 +4076,20 @@ function nthFloyd(n) {
 }
 ```
 
+# Return the day [8 kyu] #311
+
+```c
+char* whatday(int num) {
+    
+  char* days[] = {"","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+  char* error = "Wrong, please enter a number between 1 and 7";
+    // <---- hajime!
+if (num > 0 && num < 8)
+  {
+    return days[num];
+  }
+  return error;
+
+}
+```
+
