@@ -4064,3 +4064,15 @@ new_x = [-int(n) for n in x if type(n) is str]
     return sum(new_x)
 ```
 
+# nth Floyd line [7 kyu] #310
+
+```javascript
+function nthFloyd(n) {
+  let c = 1;
+  for (let testNumber = 1; testNumber <= n; c++) {
+    testNumber += c;
+  }
+  return c - 1;
+}
+```
+
