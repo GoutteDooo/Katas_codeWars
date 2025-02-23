@@ -4093,3 +4093,11 @@ if (num > 0 && num < 8)
 }
 ```
 
+# Regexp Basics - is it a digit? [8 kyu] #312
+
+```javascript
+String.prototype.digit = function() {
+  return /^\d$/.test(this)
+};
+```
+
