@@ -4146,3 +4146,12 @@ for (let i = 0; i < name.length; i++)
 } 
 ```
 
+# Template Strings [8 kyu] #315
+
+```javascript
+var templateStrings = function(noun, adjective) {
+
+  return `${noun} are ${adjective}`
+}
+```
+
