@@ -4183,3 +4183,30 @@ for (int i = 0; i < n - 1; i++)
 }
 ```
 
+# Pythagorean Triple [8 kyu] #317
+
+```c
+#include <stdbool.h>
+bool pythagorean_triple(const unsigned sides[3])
+{
+  for (int i = 0; i < 3; i++)
+  {
+    int sum = 0;
+    int calc = sides[i] * sides[i];
+    for (int j = 0; j < 3; j++)
+    {
+      //on ne veut pas vérifier le même indice
+if (i == j) continue;
+      sum += sides[j]*sides[j];
+    }
+
+    printf("sum = %i & sides[i] = %i\n",sum, calc);
+    if (sum == calc)
+    {
+      return true;
+    }
+  }
+  return false;
+}
+```
+
