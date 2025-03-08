@@ -4155,3 +4155,31 @@ var templateStrings = function(noun, adjective) {
 }
 ```
 
+# Sum of differences in array [8 kyu] #316
+
+```c
+#include <stddef.h>
+#include <stdlib.h> // Need this for qsort
+// Custom comparator
+int comp(const void* a, const void* b) 
+{
+    // If a is smaller, negative value will be returned
+// If a is larger, positive value will be returned
+return (*(int*)a - *(int*)b);
+}
+
+int diffsum(int *arr, size_t n) // Removed const
+{
+    if (n < 2) return 0;
+    // Sort the array
+qsort(arr, n, sizeof(int), comp);
+    int sum = 0;
+    // Then, take each pair and add it to sum
+for (int i = 0; i < n - 1; i++) 
+    {
+        sum += arr[i+1] - arr[i];
+    }
+    return sum;
+}
+```
+
