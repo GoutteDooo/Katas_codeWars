@@ -4210,3 +4210,14 @@ if (i == j) continue;
 }
 ```
 
+# Thinkful - Number Drills: Blue and red marbles [8 kyu] #318
+
+```c
+float guess_blue(int blueStart, int redStart, int bluePulled, int redPulled)
+{
+  int total_marbles_left = blueStart + redStart - bluePulled - redPulled;
+  int blue_left = blueStart - bluePulled;
+  return ((float)blue_left / total_marbles_left);
+}
+```
+
