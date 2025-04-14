@@ -4221,3 +4221,39 @@ float guess_blue(int blueStart, int redStart, int bluePulled, int redPulled)
 }
 ```
 
+# String incrementer [5 kyu] #321
+
+```javascript
+const incrementString = (str) => {
+  //Prendre le dernier morceau de la chaîne, et vérifier s'il s'agit d'un nombre
+let numbers = "";
+  let n = str.length - 1;
+  for (let i = n; i >= 0; i--)
+  //Prélève tout les numbers de l'input et l'incorpore dans une nouvelle chaîne
+  {
+    if (!isNaN(str[i])) { //Si est un nombre
+numbers += str[i];
+    } else {
+      break;
+    }
+  }
+  
+  //Si aucun nombre retiré, alors on ajoute 0 à l'input
+if (numbers.length == 0) return str + "1";
+  //Sinon,
+numbers = [...numbers].reverse().join("");//reverse
+// console.log("t: ", numbers);
+numbersLength = numbers.length;
+  numbers = Number(numbers);
+  numbers += 1;
+  numbers = String(numbers);
+  //Si la string a une length plus petite à la base, on ajoute autant de zéros au début jusqu'à atteindre la length
+while (numbers.length < numbersLength) {
+    numbers = "0" + numbers;
+  }
+  let slicing = numbersLength;
+  let newStr = str.slice(0, -slicing);
+  return newStr + numbers;
+};
+```
+
