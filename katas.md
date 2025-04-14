@@ -4257,3 +4257,15 @@ while (numbers.length < numbersLength) {
 };
 ```
 
+# Area of a Square [8 kyu] #321
+
+```c
+extern const double PI;
+
+double square_area(double arc) {
+  double r = (arc * 4) / (2 * PI);
+  double rsqr = r * r;
+  return ((int)(rsqr * 100 + .5) / 100.0);
+}
+```
+
