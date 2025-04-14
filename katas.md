@@ -4269,3 +4269,24 @@ double square_area(double arc) {
 }
 ```
 
+# Compare within margin [8 kyu] #321
+
+```c
+int close_compare(int a, int b, int margin)
+{
+  int distance = b > a ? b - a : a - b;
+  if (distance <= margin)
+  {
+    return 0;  
+  }
+  else if (a < b)
+  {
+    return -1;
+  }
+  else 
+  {
+    return 1;
+  }
+}
+```
+
