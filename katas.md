@@ -4290,3 +4290,20 @@ int close_compare(int a, int b, int margin)
 }
 ```
 
+# No zeros for heroes [8 kyu] #322
+
+```javascript
+function noBoringZeros(n) {
+  // your code
+const array = n.toString().split("");
+  for (let i = array.length - 1; i >= 0; i--) {
+    if (array[i] === "0") {
+      array.splice(i, 1);
+    } else {
+      break;
+    }
+  }
+  return +array.join("");
+}
+```
+
