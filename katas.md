@@ -4331,3 +4331,11 @@ digits = [int(d) for d in str(number)]
 factorials = [factorial(d) for d in digits]
     return "STRONG!!!!" if number == sum(factorials) else "Not Strong !!"
 ```
+
+# Switcheroo [7 kyu] #321
+
+```python
+def switcheroo(s):
+    #your code here
+return s.replace("b", "d").replace("a","b").replace("d","a")
+```
