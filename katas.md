@@ -4636,3 +4636,14 @@ export function peopleWithAgeDrink(old: number): string {
   return `drink ${drinking}`;
 }
 ```
+
+# Basic Training: Add item to an Array [8 kyu] #339
+
+```typescript
+import { websites } from "./preloaded";
+// add the value "codewars" to the `websites` array
+console.log(websites);
+websites.push("codewars");
+
+export { websites };
+```
