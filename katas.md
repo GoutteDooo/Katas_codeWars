@@ -4589,3 +4589,17 @@ export function toTime(seconds: number): string {
   return `${h} hour(s) and ${m} minute(s)`;
 }
 ```
+
+# Leonardo Dicaprio and Oscars [8 kyu] #336
+
+```typescript
+export const leo = (oscar: number): string => {
+  return oscar > 88
+    ? "Leo got one already!"
+    : oscar == 88
+    ? "Leo finally won the oscar! Leo is happy"
+    : oscar == 86
+    ? "Not even for Wolf of wallstreet?!"
+    : "When will you give Leo an Oscar?";
+};
+```
