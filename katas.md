@@ -4569,3 +4569,13 @@ function sumCubes(n) {
   return sum;
 }
 ```
+
+# Find the Integral [8 kyu] #334
+
+```javascript
+function integrate(coefficient, exponent) {
+  const newExponent = exponent + 1;
+  const newCoefficient = coefficient / newExponent;
+  return `${newCoefficient}x^${newExponent}`;
+}
+```
