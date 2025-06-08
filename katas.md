@@ -4696,3 +4696,15 @@ const incrementString = (str) => {
   return newStr + numbers;
 };
 ```
+
+# Area of a Square [8 kyu] #342
+
+```c
+extern const double PI;
+
+double square_area(double arc) {
+  double r = (arc * 4) / (2 * PI);
+  double rsqr = r * r;
+  return ((int)(rsqr * 100 + .5) / 100.0);
+}
+```
