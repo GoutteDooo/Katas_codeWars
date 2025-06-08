@@ -4463,4 +4463,34 @@ export function compare(s1: string | null, s2: string | null): boolean {
 }
 ```
 
-> > > > > > > 4d2dab3 (docs(common): add 'Determine offspring sex based on genes XX and XY chromosomes' kata)
+# Reverse polish notation calculator [6 kyu] #329
+
+```typescript
+export function calc(expr: string): number {
+  if (expr == "") return 0;
+  const t = expr.trim().split(" ");
+  for (let i = 0; i < t.length; i++) {
+    if (!isNaN(Number(t[i]))) {
+      //operand
+    } else {
+      //operator
+      const v1 = parseFloat(t[i - 2]);
+      const v2 = parseFloat(t[i - 1]);
+
+      const r =
+        t[i] == "+"
+          ? v1 + v2
+          : t[i] == "-"
+          ? v1 - v2
+          : t[i] == "*"
+          ? v1 * v2
+          : v1 / v2;
+      t[i] = String(r);
+      t.splice(i - 2, 2);
+      i -= 2;
+    }
+    if (t.length == 1) return parseFloat(t[0]);
+  }
+  return 0;
+}
+```
