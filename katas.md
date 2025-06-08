@@ -4406,17 +4406,3 @@ export function checkExam(array1: string[], array2: string[]): number {
 ```
 
 > > > > > > > 4d2dab3 (docs(common): add 'Determine offspring sex based on genes XX and XY chromosomes' kata)
-> > > > > > > // good luck
-> > > > > > > return Math.max(array2.reduce((a,c,i) => a + (c === array1[i] ? 4 : c !== "" ? -1 : 0),0),0)
-> > > > > > > }
-
-````
-
-# Sum of angles [7 kyu] #326
-
-```typescript
-export function angle(n: number): number {
-  // your code here
-return (n - 2) * 180;
-}
-````
