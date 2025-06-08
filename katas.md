@@ -4602,4 +4602,17 @@ export const leo = (oscar: number): string => {
     ? "Not even for Wolf of wallstreet?!"
     : "When will you give Leo an Oscar?";
 };
+  return oscar > 88 ? "Leo got one already!" : oscar == 88 ? "Leo finally won the oscar! Leo is happy" : oscar == 86 ? "Not even for Wolf of wallstreet?!" : "When will you give Leo an Oscar?" ;
+}
+```
+
+# Training JS #29: methods of arrayObject---concat() and join() [8 kyu] #337
+
+```typescript
+export function bigToSmall(arr: number[][]): string {
+  return ([] as number[])
+    .concat(...arr)
+    .sort((a, b) => b - a)
+    .join(">");
+}
 ```
