@@ -4647,3 +4647,12 @@ websites.push("codewars");
 
 export { websites };
 ```
+
+# Is integer safe to use? [8 kyu] #340
+
+```typescript
+export function SafeInteger(n: number): boolean {
+  const x = Number.MAX_SAFE_INTEGER;
+  return n < x;
+}
+```
