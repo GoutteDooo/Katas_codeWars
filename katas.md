@@ -4211,9 +4211,8 @@ const incrementString = (str) => {
   for (
     let i = n;
     i >= 0;
-    i--
-  ) //Prélève tout les numbers de l'input et l'incorpore dans une nouvelle chaîne
-  {
+    i-- //Prélève tout les numbers de l'input et l'incorpore dans une nouvelle chaîne
+  ) {
     if (!isNaN(str[i])) {
       //Si est un nombre
       numbers += str[i];
@@ -4319,4 +4318,16 @@ for [k,v] in table.items():
 keys_find = [k for k,v in table.items() if v == max_count]
     return max(keys_find)
 
+```
+
+# Strong Number (Special Numbers Series #2) [7 kyu] #320
+
+```python
+from math import factorial
+def strong_num(number):
+    # take each digit of the number and insert it into a list
+digits = [int(d) for d in str(number)]
+    # for each digits, calculate the factorial of the digit
+factorials = [factorial(d) for d in digits]
+    return "STRONG!!!!" if number == sum(factorials) else "Not Strong !!"
 ```
