@@ -4349,7 +4349,7 @@ return seq[0:n] if n else []
 
 ```
 
-# Training JS #18: Methods of String object--concat() split() and its good friend join() [8 kyu] #323
+# pick a set of first elements [8 kyu] #322
 
 ```python
 def split_and_merge(s, sep):
@@ -4362,3 +4362,17 @@ for i in range(0, len(split_words)):
     new_str += " " if i < len(split_words)-1 else ""
 return new_str
 ```
+
+<<<<<<< HEAD
+||||||| parent of 4d2dab3 (docs(common): add 'Determine offspring sex based on genes XX and XY chromosomes' kata)
+
+=======
+
+# Determine offspring sex based on genes XX and XY chromosomes [8 kyu] #324
+
+```python
+def chromosome_check(c):
+    return "Congratulations! You're going to have a daughter." if c == "XX" else "Congratulations! You're going to have a son."
+```
+
+> > > > > > > 4d2dab3 (docs(common): add 'Determine offspring sex based on genes XX and XY chromosomes' kata)
