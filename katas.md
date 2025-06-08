@@ -4339,3 +4339,21 @@ def switcheroo(s):
     #your code here
 return s.replace("b", "d").replace("a","b").replace("d","a")
 ```
+
+# pick a set of first elements [8 kyu] #322
+
+```python
+def first(seq, n=1):
+    # your code here
+return seq[0:n] if n else []
+
+```
+
+# pick a set of first elements [8 kyu] #322
+
+```python
+def first(seq, n=1):
+    # your code here
+return seq[0:n] if n else []
+
+```
