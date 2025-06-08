@@ -4616,3 +4616,23 @@ export function bigToSmall(arr: number[][]): string {
     .join(">");
 }
 ```
+
+# Drink about [8 kyu] #338
+
+```typescript
+export function peopleWithAgeDrink(old: number): string {
+  const datas = [{ 14: "toddy" }, { 18: "coke" }, { 21: "beer" }];
+  let drinking = "whisky";
+  for (let data in datas) {
+    console.log(data);
+    console.log(Object.keys(datas[data])[0]);
+
+    if (old < Number(Object.keys(datas[data])[0])) {
+      drinking = Object.values(datas[data])[0];
+      break;
+    }
+    // console.log(datas[data]);
+  }
+  return `drink ${drinking}`;
+}
+```
