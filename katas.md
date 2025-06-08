@@ -4542,3 +4542,17 @@ export function ipsBetween(start: string, end: string): number {
   return finalToInt - currentToInt;
 }
 ```
+
+# A wolf in sheep's clothing [8 kyu] #332
+
+```typescript
+export function warnTheSheep(queue: string[]): string {
+  queue = queue.reverse();
+  if (queue[0] == "wolf") {
+    return "Pls go away and stop eating my sheep";
+  } else {
+    const wolf = queue.findIndex((a) => a == "wolf");
+    return `Oi! Sheep number ${wolf}! You are about to be eaten by a wolf!`;
+  }
+}
+```
