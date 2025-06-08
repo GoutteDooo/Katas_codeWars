@@ -4520,3 +4520,25 @@ export function pyramid(n: number): Array<Array<Number>> {
   return base;
 }
 ```
+
+# Count IP Addresses [5 kyu] #331
+
+```typescript
+export function ipsBetween(start: string, end: string): number {
+  // console.log(ipsBetween("20.0.0.10", "20.0.1.0"));
+  const current = start.split(".").map((x) => parseInt(x));
+  const final = end.split(".").map((x) => parseInt(x));
+  const currentToInt =
+    current[0] * 256 * 256 * 256 +
+    current[1] * 256 * 256 +
+    current[2] * 256 +
+    current[3];
+  const finalToInt =
+    final[0] * 256 * 256 * 256 +
+    final[1] * 256 * 256 +
+    final[2] * 256 +
+    final[3];
+  //   console.log(currentToInt);
+  return finalToInt - currentToInt;
+}
+```
