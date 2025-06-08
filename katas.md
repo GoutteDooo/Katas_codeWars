@@ -4375,4 +4375,34 @@ def chromosome_check(c):
     return "Congratulations! You're going to have a daughter." if c == "XX" else "Congratulations! You're going to have a son."
 ```
 
+# Check the exam [7 kyu] #325
+
+```typescript
+export function checkExam(array1: string[], array2: string[]): number {
+  // good luck
+  return Math.max(
+    array2.reduce(
+      (a, c, i) => a + (c === array1[i] ? 4 : c !== "" ? -1 : 0),
+      0
+    ),
+    0
+  );
+}
+```
+
+# Check the exam [7 kyu] #325
+
+```typescript
+export function checkExam(array1: string[], array2: string[]): number {
+  // good luck
+  return Math.max(
+    array2.reduce(
+      (a, c, i) => a + (c === array1[i] ? 4 : c !== "" ? -1 : 0),
+      0
+    ),
+    0
+  );
+}
+```
+
 > > > > > > > 4d2dab3 (docs(common): add 'Determine offspring sex based on genes XX and XY chromosomes' kata)
