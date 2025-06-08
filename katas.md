@@ -4349,11 +4349,16 @@ return seq[0:n] if n else []
 
 ```
 
-# pick a set of first elements [8 kyu] #322
+# Training JS #18: Methods of String object--concat() split() and its good friend join() [8 kyu] #323
 
 ```python
-def first(seq, n=1):
-    # your code here
-return seq[0:n] if n else []
-
+def split_and_merge(s, sep):
+  split_string = s.split()
+  split_words = [list(w) for w in split_string]
+  # sep.join([l for l in split_words])
+new_str = ''
+for i in range(0, len(split_words)):
+    new_str += sep.join(split_words[i])
+    new_str += " " if i < len(split_words)-1 else ""
+return new_str
 ```
