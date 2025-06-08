@@ -4405,4 +4405,62 @@ export function checkExam(array1: string[], array2: string[]): number {
 }
 ```
 
+# Compare Strings by Sum of Chars [7 kyu] #328
+
+```typescript
+export function compare(s1: string | null, s2: string | null): boolean {
+  const newS1 = s1 ? s1.toUpperCase() : "";
+  const newS2 = s2 ? s2.toUpperCase() : "";
+  let sumS1 = 0,
+    sumS2 = 0;
+  function isNumeric(c: string) {
+    return c.charCodeAt(0) < 65 || c.charCodeAt(0) > 90;
+  }
+  sumS1 = newS1
+    .split("")
+    .map((c) => c)
+    .reduce((a, c, i) => a + c.charCodeAt(0), sumS1);
+  sumS2 = newS2
+    .split("")
+    .map((c) => c)
+    .reduce((a, c, i) => a + c.charCodeAt(0), sumS2);
+  for (const c of newS1) {
+    if (isNumeric(c)) sumS1 = 0;
+  }
+  for (const c of newS2) {
+    if (isNumeric(c)) sumS2 = 0;
+  }
+  return sumS1 == sumS2;
+}
+```
+
+# Compare Strings by Sum of Chars [7 kyu] #328
+
+```typescript
+export function compare(s1: string | null, s2: string | null): boolean {
+  const newS1 = s1 ? s1.toUpperCase() : "";
+  const newS2 = s2 ? s2.toUpperCase() : "";
+  let sumS1 = 0,
+    sumS2 = 0;
+  function isNumeric(c: string) {
+    return c.charCodeAt(0) < 65 || c.charCodeAt(0) > 90;
+  }
+  sumS1 = newS1
+    .split("")
+    .map((c) => c)
+    .reduce((a, c, i) => a + c.charCodeAt(0), sumS1);
+  sumS2 = newS2
+    .split("")
+    .map((c) => c)
+    .reduce((a, c, i) => a + c.charCodeAt(0), sumS2);
+  for (const c of newS1) {
+    if (isNumeric(c)) sumS1 = 0;
+  }
+  for (const c of newS2) {
+    if (isNumeric(c)) sumS2 = 0;
+  }
+  return sumS1 == sumS2;
+}
+```
+
 > > > > > > > 4d2dab3 (docs(common): add 'Determine offspring sex based on genes XX and XY chromosomes' kata)
