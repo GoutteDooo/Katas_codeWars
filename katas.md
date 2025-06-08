@@ -4494,3 +4494,29 @@ export function calc(expr: string): number {
   return 0;
 }
 ```
+
+# Pyramid Array [6 kyu] #330
+
+```typescript
+export function pyramid(n: number): Array<Array<Number>> {
+  if (n <= 0) return [];
+  //create a base array
+  const base = [];
+  //for i=1 through n
+  for (let i = 1; i < n + 1; i++) {
+    //todo:create a new empty array
+    const new_array = [];
+    //todo:insert into this array i times 1
+    //for j = 1 through i
+    for (let j = 0; j < i; j++) {
+      //insert 1 into the new array
+      new_array.push(1);
+    }
+
+    //todo:insert the new array into the base array
+    base.push(new_array);
+  }
+
+  return base;
+}
+```
