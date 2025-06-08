@@ -4579,3 +4579,13 @@ function integrate(coefficient, exponent) {
   return `${newCoefficient}x^${newExponent}`;
 }
 ```
+
+# All Star Code Challenge #22 [7 kyu] #335
+
+```typescript
+export function toTime(seconds: number): string {
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  return `${h} hour(s) and ${m} minute(s)`;
+}
+```
