@@ -4736,3 +4736,17 @@ def is_loch_ness_monster(string):
   return any(sub in string for sub in ["tree fiddy","3.50","three fifty"])
 ```
 
+# Training JS #18: Methods of String object--concat() split() and its good friend join() [8 kyu] #344
+
+```python
+def split_and_merge(s, sep):
+  split_string = s.split()
+  split_words = [list(w) for w in split_string]
+  # sep.join([l for l in split_words])
+new_str = ''
+for i in range(0, len(split_words)):
+    new_str += sep.join(split_words[i])
+    new_str += " " if i < len(split_words)-1 else ""
+return new_str
+```
+
