@@ -4768,3 +4768,13 @@ return array.length ? array.reduce((a,v) => a + v) % 2 ? "odd" : "even" : "even"
 }
 ```
 
+# Jaden Casing Strings [7 kyu] #346
+
+```javascript
+String.prototype.toJadenCase = function () {
+  return this.split(" ") // Divise la chaîne en un tableau de mots
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalise chaque mot
+    .join(" "); // Reconstruit la phrase
+};
+```
+
