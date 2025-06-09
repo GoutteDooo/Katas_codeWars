@@ -4729,3 +4729,10 @@ int close_compare(int a, int b, int margin)
   }
 }
 ```
+# A Strange Trip to the Market [8 kyu] #344
+
+```python
+def is_loch_ness_monster(string):
+  return any(sub in string for sub in ["tree fiddy","3.50","three fifty"])
+```
+
