@@ -4759,3 +4759,12 @@ return (n - 2) * 180;
 }
 ```
 
+# Odd or Even? [7 kyu] #346
+
+```typescript
+export function oddOrEven(array: number[]):string {
+  // enter code here
+return array.length ? array.reduce((a,v) => a + v) % 2 ? "odd" : "even" : "even";
+}
+```
+
