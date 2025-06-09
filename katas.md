@@ -4750,3 +4750,12 @@ for i in range(0, len(split_words)):
 return new_str
 ```
 
+# Sum of angles [7 kyu] #344
+
+```typescript
+export function angle(n: number): number {
+  // your code here
+return (n - 2) * 180;
+}
+```
+
